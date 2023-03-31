@@ -75,7 +75,7 @@
 
   "flex-layout.row#reviews-content": {
     "children": [
-      "flex-layout.col#ratings-only",
+      // "flex-layout.col#ratings-only",
       "flex-layout.col#reviews-only"
     ],
     "props": {
