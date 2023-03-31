@@ -1,7 +1,7 @@
 {
-  "vendor": "vtexfashionb2b",
+  "vendor": "vtextitantools",
   "name": "b2bstore",
-  "version": "0.0.25",
+  "version": "0.0.0",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
@@ -14,7 +14,7 @@
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
-    "vtex.reviews-and-ratings": "2.x",
+    "vtex.reviews-and-ratings": "3.x",
     "vtex.quickorder": "3.x",
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
