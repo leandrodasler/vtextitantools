@@ -1,0 +1,48 @@
+{
+  "check-permission#product-summary-price": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#product-price",
+      "disallowed-content#product-price"
+    ]
+  },
+  "check-permission#product-summary-price-list": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#product-price-list",
+      "disallowed-content#product-price"
+    ]
+  },
+  "allowed-content#product-summary-price": {
+    "children": ["product-summary-price"]
+  },
+  "disallowed-content#product-summary-price": {
+    "children": ["rich-text#product-summary-price"]
+  },
+  "rich-text#product-summary-price": {
+    "props": {
+      "blockClass": ["product-summary-price-message"],
+      "text": "Login or register to view prices"
+    }
+  }
+}

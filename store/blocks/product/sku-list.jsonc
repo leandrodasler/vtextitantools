@@ -1,0 +1,192 @@
+{
+  "check-permission#sku-list": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#sku-list" /* ,
+      "disallowed-content#product-price" */
+    ]
+  },
+  "allowed-content#sku-list": {
+    "children": ["flex-layout.row#sku-list"]
+  },
+  "flex-layout.row#sku-list": {
+    "children": ["flex-layout.col#sku-list"],
+    "props": {
+      "marginBottom": 5
+    }
+  },
+
+  "flex-layout.col#sku-list": {
+    "children": [
+      "responsive-layout.desktop#sku-list-header",
+      "sku-list",
+      "flex-layout.row#add-all-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "sku-list"
+    }
+  },
+
+  "responsive-layout.desktop#sku-list-header": {
+    "children": ["flex-layout.row#sku-list-header"]
+  },
+
+  "flex-layout.row#sku-list-header": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "skuListHeader",
+      "marginBottom": 3
+    },
+    "children": ["rich-text#size", "rich-text#qty"]
+  },
+
+  "rich-text#size": {
+    "props": {
+      "text": "**Size**",
+      "blockClass": "skuList",
+      "width": "50%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#qty": {
+    "props": {
+      "text": "**Quantity**",
+      "blockClass": "skuList",
+      "width": "50%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "sku-list": {
+    "blocks": ["sku-content.desktop", "sku-content.mobile"]
+  },
+
+  "flex-layout.row#add-all-to-cart-button": {
+    "children": ["add-all-to-cart-button"],
+    "props": {
+      "marginTop": 3
+    }
+  },
+
+  "sku-content.desktop": {
+    "children": ["flex-layout.row#item-main-desktop"]
+  },
+
+  "flex-layout.row#item-main-desktop": {
+    "props": {
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#sku-highlight-size",
+      "flex-layout.col#sku-quantity-selector" /* ,
+      "flex-layout.col#sku-buy-button" */
+    ]
+  },
+
+  "flex-layout.col#sku-highlight-size": {
+    "props": {
+      "width": "50%",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-highlights#size"]
+  },
+
+  "sku-highlights#size": {
+    "props": {
+      "conditional": {
+        "highlight": "admin/editor.sku-list.highlights.chooseDefaultSpecification",
+        // "highlight": "admin/editor.sku-list.highlights.allSpecifications",
+        "typeSpecifications": "SIZE"
+      },
+      "showLabel": false
+    }
+  },
+
+  "flex-layout.col#sku-quantity-selector": {
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-quantity-selector"]
+  },
+
+  // "flex-layout.col#sku-buy-button": {
+  //   "props": {
+  //     "verticalAlign": "middle"
+  //   },
+  //   "children": ["sku-buy-button"]
+  // },
+
+  "sku-content.mobile": {
+    "children": ["flex-layout.row#item-main-mobile"]
+  },
+
+  "flex-layout.row#item-main-mobile": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center",
+      "rowGap": 3
+    },
+    "children": [
+      "flex-layout.col#sku-highlight-size-mobile",
+      "flex-layout.col#sku-quantity-selector-mobile" /* ,
+      "flex-layout.col#sku-buy-button" */
+    ]
+  },
+
+  "flex-layout.col#sku-highlight-size-mobile": {
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-highlights#size-mobile"]
+  },
+
+  "sku-highlights#size-mobile": {
+    "props": {
+      "conditional": {
+        "highlight": "admin/editor.sku-list.highlights.chooseDefaultSpecification",
+        "typeSpecifications": "SIZE"
+      },
+      "showLabel": true
+    }
+  },
+
+  "flex-layout.col#sku-quantity-selector-mobile": {
+    "props": {
+      "width": "50%",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-quantity-selector"]
+  },
+
+  "sku-quantity-selector": {
+    "blocks": ["item-quantity"],
+    "props": {
+      "showLabel": false
+    }
+  },
+
+  "sku-buy-button": {
+    "blocks": ["item-buy-button"]
+  },
+
+  "item-buy-button": {
+    "props": {
+      "showToast": null
+    }
+  }
+}

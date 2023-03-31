@@ -1,0 +1,3 @@
+.menuLinks > div > div:nth-child(10) {
+  display: none;
+}

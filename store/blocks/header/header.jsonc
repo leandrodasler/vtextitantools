@@ -1,0 +1,380 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#desktop"]
+  },
+
+  "flex-layout.row#demo-store-warning": {
+    "props": {
+      "blockClass": "demo-store-warning",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#demo-store-warning"]
+  },
+
+  "flex-layout.col#demo-store-warning": {
+    "children": ["rich-text#demo-store-warning"]
+  },
+
+  "rich-text#demo-store-warning": {
+    "props": {
+      "text": "Attention! This is a VTEX platform demo store. Products, prices and deliveries are merely illustrative.",
+      "textPosition": "CENTER",
+      "textColor": "c-action-primary",
+      "blockClass": "demo-store-warning"
+    }
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#telemarketing",
+      "flex-layout.row#desktop",
+      "flex-layout.row#headerStripe"
+    ]
+  },
+
+  "flex-layout.row#telemarketing": {
+    "children": ["telemarketing"],
+    "props": {
+      "blockClass": ["telemarketing"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "verticalAlign": "center",
+      "blockClass": "header",
+      "colGap": 7,
+      "colSizing": "auto"
+    },
+    "children": [
+      // "drawer",
+      "category-menu",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar",
+      "link#quickOrder",
+      "login",
+      // "flex-layout.col#permission-description",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#permission-description": {
+    "props": {
+      "blockClass": "permission-description"
+    },
+    "children": [
+      "check-permission#store-admin",
+      "check-permission#sales-admin",
+      "check-permission#sales-manager",
+      "check-permission#sales-representative",
+      "check-permission#customer-admin",
+      "check-permission#customer-approver",
+      "check-permission#customer-buyer"
+    ]
+  },
+
+  "flex-layout.col#search-bar": {
+    "children": ["search-bar"],
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#headerStripe": {
+    "props": {
+      "blockClass": "headerStripe",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "shopper-location",
+      "check-permission#reseller-overlay-trigger",
+      "flex-layout.col#spacer",
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.row#b2b-user-widget": {
+    "children": ["flex-layout.col#b2b-user-widget"],
+    "props": {
+      "blockClass": "b2b-user-widget"
+    }
+  },
+  "flex-layout.col#b2b-user-widget": {
+    "children": [
+      "b2b-user-widget"
+      // "b2b-switch-organizations",
+      // "flex-layout.col#permission-description",
+      // "link#b2b-user-widget-link-1",
+      // "link#b2b-user-widget-link-2"
+    ],
+    "props": {
+      "blockClass": "b2b-user-widget"
+    }
+  },
+  "link#b2b-user-widget-link-1": {
+    "props": {
+      "label": "Gerenciar organização",
+      "href": "/account#/organization"
+    }
+  },
+  "link#b2b-user-widget-link-2": {
+    "props": {
+      "label": "Minhas cotações",
+      "href": "/b2b-quotes"
+    }
+  },
+  "rich-text#b2b-user-widget-link-1": {
+    "props": {
+      "text": "Gerenciar organização",
+      "textPosition": "CENTER",
+      "link": {
+        "url": "/account#/organization"
+      }
+    }
+  },
+  "rich-text#b2b-user-widget-link-2": {
+    "props": {
+      "text": "Minhas cotações",
+      "textPosition": "CENTER",
+      "link": {
+        "url": "/b2b-quotes"
+      }
+    }
+  },
+
+  "rich-text#headStripe1": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Releases](/releases)"
+    }
+  },
+
+  "rich-text#headStripe2": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Offers](/deals)"
+    }
+  },
+
+  "rich-text#headStripe3": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Top sales](/top-sales)"
+    }
+  },
+
+  "rich-text#headStripe4": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Brands](/services)"
+    }
+  },
+
+  "rich-text#headStripe5": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Accessories](/gift-cards)"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/icons/VTEX-Fashion-B2B.svg",
+      "width": "123"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#mobile"]
+  },
+
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#mobileHeader",
+      "check-permission#menuLinks",
+      "check-permission#reseller-overlay-trigger"
+      // "slider-layout#menuLinks"
+    ],
+    "props": {
+      "blockClass": "headerMobile"
+    }
+  },
+
+  "flex-layout.row#mobileHeader": {
+    "children": ["flex-layout.col#mobileHeader"]
+  },
+
+  "slider-layout#menuLinksLogged": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 2,
+        "tablet": 4
+      },
+      "centerMode": "to-the-left",
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "stripeSlider",
+      "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      // "check-permission#reseller-b2b-user-widget",
+      // "check-permission#reseller-overlay-trigger",
+      // "check-permission#reseller",
+      // "check-permission#orderQuote",
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5"
+    ]
+  },
+
+  "slider-layout#menuLinksNotLogged": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 2,
+        "tablet": 4
+      },
+      "centerMode": "to-the-left",
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "stripeSlider",
+      "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      "check-permission#reseller-b2b-user-widget",
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5"
+    ]
+  },
+
+  "flex-layout.col#mobileHeader": {
+    "children": ["flex-layout.row#mobile", "flex-layout.row#mobileSearch"],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+
+  "flex-layout.row#mobile": {
+    "children": [
+      /* "drawer" */ "category-menu",
+      // "flex-layout.col#spacer",
+      "logo",
+      "flex-layout.col#spacer",
+      /* "check-permission#login", */ "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+
+  "link#orderQuote": {
+    "props": {
+      "label": "Minhas cotações",
+      "href": "/b2b-quotes",
+      "blockClass": "orderQuote"
+    }
+  },
+
+  "link#organization": {
+    "props": {
+      "label": "Gerenciar organização",
+      "href": "/account#/organization",
+      "blockClass": "orderQuote"
+    }
+  },
+
+  "link#profile": {
+    "children": ["icon-profile"],
+    "props": {
+      "href": "/account",
+      "blockClass": "accountLink"
+    }
+  },
+
+  "flex-layout.row#mobileSearch": {
+    "children": ["flex-layout.col#mobileSearch", "flex-layout.col#quickOrder"],
+    "props": {
+      "blockClass": "searchBarMobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "colGap": 4
+    }
+  },
+
+  "flex-layout.col#mobileSearch": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": "searchBarMobile",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#quickOrder": {
+    "children": ["link#quickOrder"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2#mobile"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass": "searchMobile"
+    }
+  },
+
+  "login": {
+    "props": {
+      "iconLabel": "Login"
+    }
+  },
+
+  "login#mobile": {
+    "props": {
+      "iconLabel": "Login"
+    }
+  }
+}

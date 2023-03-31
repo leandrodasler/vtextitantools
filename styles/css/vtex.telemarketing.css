@@ -1,0 +1,21 @@
+.wrapper {
+  background: var(--near-white);
+  border: var(--fresh-blue) solid;
+  border-width: 1px 0;
+  padding: 0.5rem 0;
+}
+
+.attendantContainer {
+  padding: 0;
+}
+
+.attendantContainer,
+.loginButton,
+.logoutHeader {
+  color: var(--fresh-blue);
+}
+
+.popoverHeader,
+.popoverArrowUp {
+  background-color: var(--fresh-blue);
+}

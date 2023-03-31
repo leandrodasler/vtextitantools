@@ -1,0 +1,100 @@
+{
+  "sticky-layout#box": {
+    "children": ["flex-layout.row#box"],
+    "props": {
+      "blockClass": ["box"],
+      "position": "top",
+      "verticalSpacing": 186
+    }
+  },
+
+  "flex-layout.row#box": {
+    "children": ["flex-layout.col#box"],
+    "props": {
+      "blockClass": ["box"]//,
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#box": {
+    "children": [
+      "flex-layout.row#fake-summary",
+      // "flex-layout.row#seller-name",
+      "check-permission#product-price"
+    ],
+    "props": {
+      "blockClass": ["box"],
+      "preventVerticalStretch": true
+    }
+  },
+  "check-permission#product-price": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#product-price",
+      "disallowed-content#product-price"
+    ]
+  },
+  "allowed-content#product-price": {
+    "children": [
+      "flex-layout.row#product-price-and-location-availability"
+      // "flex-layout.row#product-price",
+      // "flex-layout.row#location-availability"//,
+      // "flex-layout.row#product-availability-and-quantity",
+      // "flex-layout.row#buy-buttons-pdp"
+    ]
+  },
+  "flex-layout.row#product-price-and-location-availability": {
+    "children": [
+      "flex-layout.col#product-price-box",
+      "flex-layout.col#location-availability-box"
+      // "flex-layout.row#product-price",
+      // "flex-layout.row#location-availability"
+    ],
+    "props": {
+      "blockClass": ["product-price-and-location-availability"],
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.col#product-price-box": {
+    "children": ["flex-layout.row#product-price"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#location-availability-box": {
+    "children": ["flex-layout.row#location-availability"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "allowed-content#product-price-list": {
+    "children": [
+      "flex-layout.row#product-price",
+      // "flex-layout.row#location-availability",
+      // "flex-layout.row#product-availability-and-quantity",
+      "flex-layout.row#buy-buttons"
+    ]
+  },
+  "disallowed-content#product-price": {
+    "children": ["rich-text#product-price"]
+  },
+  "rich-text#product-price": {
+    "props": {
+      "blockClass": ["product-price-message"],
+      "text": "Login or register to view prices"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "flex-layout.row#recommendations": {
+    "children": [
+      "flex-layout.col#recommendations"
+    ]
+  },
+  "flex-layout.col#recommendations": {
+    "children": [
+      "flex-layout.row#recommendationsHead",
+      "responsive-layout.desktop#recommendationsList",
+      "responsive-layout.mobile#recommendationsList"
+    ]
+  },
+  "responsive-layout.desktop#recommendationsList": {
+    "children": [
+      "list-context.product-list#recommendations"
+    ]
+  },
+  "responsive-layout.mobile#recommendationsList": {
+    "children": [
+      "list-context.product-list#recommendationsMobile"
+    ]
+  },
+  "flex-layout.row#recommendationsHead": {
+    "children": [
+      "flex-layout.col#recommendationsHead"/* ,
+      "link#popularLink" */
+    ],
+    "props": {
+      "blockClass": "recommendationsHead"
+    }
+  },
+  "flex-layout.col#recommendationsHead": {
+    "children": [
+      "rich-text#recommendationsTitle"
+    ]
+  },
+  "rich-text#recommendationsTitle": {
+    "props": {
+      "text": "### Recommended for You",
+      "textPosition": "CENTER",
+      "blockClass": "popularTitle"
+    }
+  },
+  "link#recommendationsLink": {
+    "props": {
+      "label": "Veja mais",
+      "href": "/deals",
+      "blockClass": "popularLink"
+    }
+  },
+  "list-context.product-list#recommendations": {
+    "blocks": [
+      "product-summary.shelf#list"
+    ],
+    "children": [
+      "slider-layout#recommendationsProducts"
+    ],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC"
+    }
+  },
+  "list-context.product-list#recommendationsMobile": {
+    "blocks": [
+      "product-summary.shelf#list"
+    ],
+    "children": [
+      "slider-layout#recommendationsProducts"
+    ],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC"/* ,
+      "maxItems": "4" */
+    }
+  },
+  "slider-layout#recommendationsProducts": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "shelfTrending"/* ,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly" */
+    }
+  }
+}

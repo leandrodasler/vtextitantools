@@ -1,0 +1,221 @@
+{
+  "vtex.menu@2.x:menu#policy": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/terms",
+            "noFollow": false,
+            "tagTitle": "Terms of Use",
+            "text": "Terms of Use"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/privacy-policy",
+            "noFollow": false,
+            "tagTitle": "Privacy Policy",
+            "text": "Privacy Policy"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cookies-policy",
+            "noFollow": false,
+            "tagTitle": "Cookie Policy",
+            "text": "Cookie Policy"
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#institutional": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/who-we-are",
+            "noFollow": false,
+            "tagTitle": "Who We Are",
+            "text": "Who We Are"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/stores",
+            "noFollow": false,
+            "tagTitle": "Our Stores",
+            "text": "Our Stores"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/papers",
+            "noFollow": false,
+            "tagTitle": "Brochures",
+            "text": "Brochures"
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#help": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/who-we-are",
+            // "noFollow": false,
+            // "tagTitle": "Who We Are",
+            "text": "SAC: (21) 3174-5400"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "mailto:fashion.b2b@vtex.com.br",
+            "noFollow": false,
+            "tagTitle": "fashion.b2b@vtex.com.br",
+            "text": "fashion.b2b@vtex.com.br"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/papers",
+            // "noFollow": false,
+            // "tagTitle": "Brochures",
+            "text": "Monday to Friday from 08:00 to 22:00."
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/papers",
+            // "noFollow": false,
+            // "tagTitle": "Brochures",
+            "text": "Saturdays from 08:00 to 20:00."
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#costumer": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "id": "footerItem-help",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/help-center",
+            "noFollow": false,
+            "tagTitle": "Help Center",
+            "text": "Help Center"
+          }
+        },
+        {
+          "id": "footerItem-returns",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/returns",
+            "noFollow": false,
+            "tagTitle": "Returns",
+            "text": "Returns"
+          }
+        },
+        {
+          "id": "footerItem-recall",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/recalls",
+            "noFollow": false,
+            "tagTitle": "Product Recalls",
+            "text": "Product Recalls"
+          }
+        },
+        {
+          "id": "footerItem-accessibility",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/accessibility",
+            "noFollow": false,
+            "tagTitle": "Accessibility",
+            "text": "Accessibility"
+          }
+        },
+        {
+          "id": "footerItem-contact",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contact",
+            "noFollow": false,
+            "tagTitle": "Contact Us",
+            "text": "Contact Us"
+          }
+        },
+        {
+          "id": "footerItem-pickup",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/pickup",
+            "noFollow": false,
+            "tagTitle": "Store Pickup",
+            "text": "Store Pickup"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "responsive-layout.mobile#quickorder": {
+    "children": [
+      "flex-layout.row#quickOrderRowMobile"
+    ]
+  },  
+  "flex-layout.row#quickOrderRowMobile": {
+    "children": [
+      "flex-layout.col#quickOrderRowMobile"
+    ],
+    "props": {
+      "blockClass": "quickOrderRowMobile"
+    }
+  },
+  "flex-layout.col#quickOrderRowMobile": {
+    "children": [
+      "rich-text#quickOrderTitlePageMobile",
+      "link#byOne",
+      "link#byCategory"
+    ]
+  },
+  "rich-text#quickOrderTitlePageMobile":{
+    "props": {
+      "text": "# Quickorder",
+      "blockClass": "quickOrderTitlePageMobile"
+    }
+  },
+  "link#byOne": {
+    "children": [
+      "rich-text#byOneTitle",
+      "rich-text#byOneText"
+    ],
+    "props": {
+      "blockClass": "quickOrderButton",
+      "href": "/quickorder/one-by-one"
+    }
+  },
+  "rich-text#byOneTitle": {
+    "props": {
+      "text": "## Um por um",
+      "blockClass": "quickOrderButtonTitle"
+    }
+  },
+  "rich-text#byOneText": {
+    "props": {
+      "text": "Enter product name, select it, enter quantity and add to cart",
+      "blockClass": "quickOrderButtonText"
+    }
+  },
+  "link#byCategory": {
+    "children": [
+      "rich-text#byCategoryTitle",
+      "rich-text#byCategoryText"
+    ],
+    "props": {
+      "blockClass": "quickOrderButton",
+      "href": "/quickorder/by-category"
+    }
+  },
+  "rich-text#byCategoryTitle": {
+    "props": {
+      "text": "## Categories",
+      "blockClass": "quickOrderButtonTitle"
+    }
+  },
+  "rich-text#byCategoryText": {
+    "props": {
+      "text": "Add products directly from your categories",
+      "blockClass": "quickOrderButtonText"
+    }
+  }
+}

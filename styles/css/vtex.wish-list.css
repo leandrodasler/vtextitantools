@@ -1,0 +1,38 @@
+.wishlistIconContainer {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  transition: all .3s ease;
+  opacity: 1;
+  text-align: center;
+  right: 10px;
+}
+
+.wishlistIconContainer :global(.vtex-button):hover,
+.wishlistIconContainer :global(.vtex-button){
+  outline: none;
+  background: none;
+}
+
+.wishlistIconContainer :global(.vtex-button__label){
+  padding: 0;
+}
+
+.wishlistIcon.outline {
+  background: url("assets/icons/heartIcon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 15px;
+}
+
+.wishlistIcon.fill {
+  background: url("assets/icons/heartFilled.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 15px;
+}

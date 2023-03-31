@@ -1,0 +1,504 @@
+mutation Save($saveArgs: SaveArgsV2!) {
+  saveV2(args: $saveArgs)
+}
+
+{
+  "saveArgs": {
+    "to": "pt-BR",
+    "messages": [
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.myAccountLink",
+        "targetMessage": "Cotações e carrinhos salvos"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.title",
+        "targetMessage": "Crie uma cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.nameLabel",
+        "targetMessage": "Nome"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.descriptionLabel",
+        "targetMessage": "Descrição"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.success",
+        "targetMessage": "Cotação salva com sucesso"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.error",
+        "targetMessage": "Ocorreu um erro salvando a cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.required",
+        "targetMessage": "Dê um nome para sua cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.placeholder.quotationName",
+        "targetMessage": "Nome da cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.empty-state-label",
+        "targetMessage": "Para criar uma cotação, comece adicionando itens ao seu carrinho."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.characterLeft",
+        "targetMessage": "{count, plural, =499{caracter restante}=500{Limite de 500 caracteres alcançado}other{caracteres restantes}}"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.button.save-for-later",
+        "targetMessage": "Salvar para depois"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.create.button.request-quote",
+        "targetMessage": "Solicitar cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.back",
+        "targetMessage": "Voltar"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.error.notAuthenticated",
+        "targetMessage": "Por favor, faça login para visualizar este conteúdo."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.error.notPermitted",
+        "targetMessage": "Você não possui as permissões necessárias para visualizar este conteúdo."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.title",
+        "targetMessage": "Minhas cotações"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.newLine.label",
+        "targetMessage": "Nova cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.empty-state-label",
+        "targetMessage": "Nenhuma cotação encontrada."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.details.label",
+        "targetMessage": "Detalhes"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.referenceName.title",
+        "targetMessage": "Nome ref."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.subtotal.title",
+        "targetMessage": "Subtotal"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.creatorEmail.title",
+        "targetMessage": "Criado por"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.creationDate.title",
+        "targetMessage": "Criado em"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.expirationDate.title",
+        "targetMessage": "Data de validade"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.status.title",
+        "targetMessage": "Status"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.lastUpdate.title",
+        "targetMessage": "Última atualização"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.organization.title",
+        "targetMessage": "Organização"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.costCenter.title",
+        "targetMessage": "Centro de custos"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.showRows",
+        "targetMessage": "Exibir linhas"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.of",
+        "targetMessage": "de"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.search.placeholder",
+        "targetMessage": "Buscar"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.toggleFields.label",
+        "targetMessage": "Alternar campos visíveis"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.toggleFields.showAllLabel",
+        "targetMessage": "Exibir todos"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.toggleFields.hideAllLabel",
+        "targetMessage": "Esconder todos"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.clearFilters.label",
+        "targetMessage": "Limpar filtros"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.statusFilter.label",
+        "targetMessage": "Status"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.filters.all",
+        "targetMessage": "Todos"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.filters.none",
+        "targetMessage": "Nenhum"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.filters.any",
+        "targetMessage": "Qualquer"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.filters.is",
+        "targetMessage": "é"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quotes-table.filters.includes",
+        "targetMessage": "inclui"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.title",
+        "targetMessage": "Detalhes da cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.decline",
+        "targetMessage": "Recusar"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.save",
+        "targetMessage": "Salvar cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.submit-to-sales-rep",
+        "targetMessage": "Enviar ao representante de vendas"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.use-quote",
+        "targetMessage": "Utilizar cotação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.subtotal.title",
+        "targetMessage": "Subtotal"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.expiration.title",
+        "targetMessage": "Data de validade"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.status.title",
+        "targetMessage": "Status"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.image.title",
+        "targetMessage": "Imagem"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.refId.title",
+        "targetMessage": "Código ref."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.name.title",
+        "targetMessage": "Nome"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.quantity.title",
+        "targetMessage": "Quantidade"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.price.title",
+        "targetMessage": "Preço"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.items.total.title",
+        "targetMessage": "Total"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.apply-discount.title",
+        "targetMessage": "Aplicar desconto percentual"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.apply-discount.help-text",
+        "targetMessage": "Aplique um desconto percentual ao subtotal da cotação. Observação: isto substituirá quaisquer alterações feitas nos preços de SKU individuais."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.apply-discount.disabled-message",
+        "targetMessage": "O desconto percentual está desabilitado porque uma promoção já está aplicando um desconto maior que o desconto manual máximo."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.apply-discount.maxDiscount-text",
+        "targetMessage": "Descontos manuais acima {maxDiscount}% serão automaticamente negados."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.update-history.title",
+        "targetMessage": "Histórico de atualizações"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.update-history.update-details",
+        "targetMessage": "{index, plural, =0{Criada}other{Atualizada}} em {date} por {email} ({role}) com o status {status}"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.update-history.notes",
+        "targetMessage": "Observações:"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.add-note.label",
+        "targetMessage": "Adicionar observação"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.update-success",
+        "targetMessage": "Cotação salva com sucesso."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.update-error",
+        "targetMessage": "Erro ao salvar cotação. Visualize o console para mais detalhes."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.use-error",
+        "targetMessage": "Erro ao utilizar cotação. Visualize o console para mais detalhes."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.discount-error",
+        "targetMessage": "Existem alguns descontos maiores que o permitido."
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.percentage-discount.title",
+        "targetMessage": "Desconto percentual"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.original-subtotal.title",
+        "targetMessage": "Subtotal original"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.original-price.title",
+        "targetMessage": "Preço original"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.quote-price.title",
+        "targetMessage": "Preço cotado"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.quoted-subtotal.title",
+        "targetMessage": "Subtotal cotado"
+      },
+      {
+        "srcLang": "en-DV",
+        "context": "vtex.b2b-quotes@1.x",
+        "srcMessage": "store/b2b-quotes.quote-details.expiration-date-change.title",
+        "targetMessage": "Alteração da data de validade"
+      },
+
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.products",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Produto(s)"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.hide",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Esconder"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.show",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Exibir"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.min-items-message",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "É necessário adicionar ao menos dois produtos para comparar"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.compare",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Comparar"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.remove-all",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Remover todos"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.drawer.remove-all-message",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Todos os produtos foram removidos da comparação"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/product-comparison.product-selector.upper-limit-exceeded",
+        "context": "vtex.product-comparison@0.x",
+        "targetMessage": "Não é possível adicionar este item para comparar; limite de itens excedido"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/b2b-organizations.user-widget.organization",
+        "context": "vtex.b2b-organizations@1.x",
+        "targetMessage": "Comprando para:"
+      }
+    ]
+  }
+}

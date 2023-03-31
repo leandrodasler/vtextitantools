@@ -1,0 +1,358 @@
+{
+  /* Link de cadastrar organização de acordo com as permissões */
+  "check-permission#reseller": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#reseller"]
+  },
+  "allowed-content#reseller": {
+    "children": ["link#organization"],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+
+  /* Overlay trigger do B2B Widget de acordo com as permissões */
+  "check-permission#reseller-overlay-trigger": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-overlay-trigger",
+      "disallowed-content#reseller"
+    ]
+  },
+  "allowed-content#reseller-overlay-trigger": {
+    "children": ["overlay-trigger#b2b-user-widget"],
+    "props": {
+      "blockClass": "resellerOverlayTrigger"
+    }
+  },
+  "overlay-trigger#b2b-user-widget": {
+    "children": ["link#manage-organization", "overlay-layout#b2b-user-widget"]
+  },
+  "link#manage-organization": {
+    "props": {
+      "label": "My Organization",
+      "href": "#",
+      "blockClass": ["resellerLink", "manage-organization-link"]
+    }
+  },
+  "overlay-layout#b2b-user-widget": {
+    "props": {
+      "blockClass": "b2b-user-widget",
+      "placement": "bottom" /* ,
+      "showArrow": true */ /* ,
+      "scrollBehavior": "close-on-scroll",
+      "backdrop": "visible" */
+    },
+    "children": ["flex-layout.row#b2b-user-widget"]
+  },
+
+  /* Overlay trigger do B2B Widget de acordo com as permissões */
+  "check-permission#reseller-disclosure-trigger": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-disclosure-trigger"
+    ]
+  },
+  "allowed-content#reseller-disclosure-trigger": {
+    "children": ["disclosure-layout#b2b-user-widget"],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "disclosure-layout#b2b-user-widget": {
+    "children": ["disclosure-trigger#b2b-user-widget", "disclosure-content#b2b-user-widget"]
+  },
+  "disclosure-trigger#b2b-user-widget": {
+    "children": ["link#manage-organization"]
+  },
+  "disclosure-content#b2b-user-widget": {
+    "children": ["b2b-user-widget"]
+  },
+
+  /* B2B Widget de acordo com as permissões */
+  "check-permission#reseller-b2b-user-widget": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-b2b-user-widget",
+      "disallowed-content#reseller"
+    ]
+  },
+  "allowed-content#reseller-b2b-user-widget": {
+    // "children": ["b2b-user-widget"],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+
+  /* Link do quickorder ou cadastrar organização de acordo com as permissões */
+  "check-permission#orderQuote": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#orderQuote"]
+  },
+  "allowed-content#orderQuote": {
+    "children": ["link#orderQuote"],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "disallowed-content#reseller": {
+    "children": ["link#reseller"],
+    "props": {
+      "blockClass": "resellerChallengeFallback"
+    }
+  },
+
+  /* Botão de login/profile de acordo com as permissões */
+  "check-permission#login": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#reseller", "disallowed-content#reseller"]
+  },
+  "allowed-content#login": {
+    "children": ["link#profile"],
+    "props": {
+      "blockClass": "loginChallengeContent"
+    }
+  },
+  "disallowed-content#login": {
+    "children": ["login#mobile"],
+    "props": {
+      "blockClass": "loginChallengeFallback"
+    }
+  },
+
+  /* Disposição dos links do menu mobile de acordo com as permissões */
+  "check-permission#menuLinks": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#menuLinksLogged",
+      "disallowed-content#menuLinksNotLogged"
+    ]
+  },
+  "allowed-content#menuLinksLogged": {
+    "children": ["slider-layout#menuLinksLogged"]
+  },
+  "disallowed-content#menuLinksNotLogged": {
+    "children": ["slider-layout#menuLinksNotLogged"]
+  },
+
+  /* Seção na home de área do representante da organização */
+  "check-permission#representative-area": {
+    "props": {
+      "roles": [
+        // "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative" //,
+        // "customer-admin",
+        // "customer-approver",
+        // "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#representative-area"]
+  },
+  "allowed-content#representative-area": {
+    "children": ["flex-layout.row#representative-area"]
+  },
+
+  /* Seção na home de últimos pedidos da organização */
+  "check-permission#lastOrders": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver"/* ,
+        "customer-buyer" */
+      ]
+    },
+    "blocks": ["allowed-content#lastOrders"]
+  },
+  "allowed-content#lastOrders": {
+    "children": ["flex-layout.row#last-orders"]
+  },
+
+  /* Verificando cada papel para exibir sua descrição */
+  "check-permission#store-admin": {
+    "props": {
+      "roles": ["store-admin"]
+    },
+    "blocks": ["allowed-content#store-admin"]
+  },
+  "allowed-content#store-admin": {
+    "children": ["rich-text#store-admin"]
+  },
+  "rich-text#store-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador da Loja**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-admin": {
+    "props": {
+      "roles": ["sales-admin"]
+    },
+    "blocks": ["allowed-content#sales-admin"]
+  },
+  "allowed-content#sales-admin": {
+    "children": ["rich-text#sales-admin"]
+  },
+  "rich-text#sales-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-manager": {
+    "props": {
+      "roles": ["sales-manager"]
+    },
+    "blocks": ["allowed-content#sales-manager"]
+  },
+  "allowed-content#sales-manager": {
+    "children": ["rich-text#sales-manager"]
+  },
+  "rich-text#sales-manager": {
+    "props": {
+      "text": "Minha função:<br>**Gerente de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-representative": {
+    "props": {
+      "roles": ["sales-representative"]
+    },
+    "blocks": ["allowed-content#sales-representative"]
+  },
+  "allowed-content#sales-representative": {
+    "children": ["rich-text#sales-representative"]
+  },
+  "rich-text#sales-representative": {
+    "props": {
+      "text": "Minha função:<br>**Representante de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-admin": {
+    "props": {
+      "roles": ["customer-admin"]
+    },
+    "blocks": ["allowed-content#customer-admin"]
+  },
+  "allowed-content#customer-admin": {
+    "children": ["rich-text#customer-admin"]
+  },
+  "rich-text#customer-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador da Organização**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-approver": {
+    "props": {
+      "roles": ["customer-approver"]
+    },
+    "blocks": ["allowed-content#customer-approver"]
+  },
+  "allowed-content#customer-approver": {
+    "children": ["rich-text#customer-approver"]
+  },
+  "rich-text#customer-approver": {
+    "props": {
+      "text": "Minha função:<br>**Aprovador da Organização**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-buyer": {
+    "props": {
+      "roles": ["customer-buyer"]
+    },
+    "blocks": ["allowed-content#customer-buyer"]
+  },
+  "allowed-content#customer-buyer": {
+    "children": ["rich-text#customer-buyer"]
+  },
+  "rich-text#customer-buyer": {
+    "props": {
+      "text": "Minha função:<br>**Comprador da Organização**",
+      "blockClass": "permission-description"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "flex-layout.row#trending": {
+    "children": [
+      "flex-layout.col#trending"
+    ],
+    "props": {
+      "blockClass": "trendingSection"
+    }
+  },
+  "flex-layout.col#trending": {
+    "children": [
+      // "flex-layout.row#trendingHead",
+      "list-context.product-list#trending"
+    ]
+  },
+  "flex-layout.row#trendingHead": {
+    "children": [
+      "rich-text#trendingTitle",
+      "link#trending"
+    ],
+    "props": {
+      "blockClass": "trendingHead",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#trendingTitle": {
+    "props": {
+      "text": "### Novidades da Semana",
+      "blockClass": "trendingTitle"
+    }
+  },
+  "link#trending": {
+    "props": {
+      "label": "Ver tudo",
+      "blockClass": "trendingLink",
+      "href": "/releases"
+    }
+  },
+  "list-context.product-list#trending": {
+    "blocks": [
+      "product-summary.shelf#list"
+    ],
+    "children": [
+      "slider-layout#trendingProducts"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#trendingProducts": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "shelfTrending"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.trigger {
+  height: 100%;
+}
+/*
+.popper--b2b-user-widget {
+  left: 32px !important;
+  width: 262px;
+}
+
+@media (min-width: 1505px) {
+  .popper--b2b-user-widget {
+    left: 64px !important;
+  }
+}*/
+
+.container--b2b-user-widget {
+  background-color: var(--serious-black);
+  border-color: var(--serious-black);
+  color: var(--base);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+  border-top: none;
+}
+/*
+.container--b2b-user-widget
+  :global(.vtex-flex-layout-0-x-flexRow--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexRowContent--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-flex-layout-0-x-flexCol--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexColChild--b2b-user-widget) {
+  border-bottom: var(--b2b-blue-darkest) solid 1px;
+}
+
+.container--b2b-user-widget
+  :global(.vtex-flex-layout-0-x-flexRow--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexRowContent--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-flex-layout-0-x-flexCol--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexColChild--b2b-user-widget):last-child {
+  border-bottom: none;
+}
+
+.container--b2b-user-widget :global(.vtex-store-link-0-x-link) {
+  color: var(--b2b-blue-darkest);
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+.container--b2b-user-widget :global(.vtex-store-link-0-x-link):active,
+.container--b2b-user-widget :global(.vtex-store-link-0-x-link):focus,
+.container--b2b-user-widget :global(.vtex-store-link-0-x-link):hover {
+  color: var(--base);
+  background-color: var(--b2b-blue-darkest);
+} */

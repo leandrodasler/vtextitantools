@@ -1,0 +1,21 @@
+:local(:root) {
+  --black-dark: #000000;
+  --fresh-blue: #f71963;
+  --fresh-blue-dark: #0067c7;
+  --fresh-blue-lightest: #f3f9ff;
+  --fresh-orange: #ff5f00;
+  --fresh-darkest: #003364;
+  --green-dark: #468a2e;
+  --black-medium: #4a596b;
+  --b2b-header-blue-medium: #fff;
+  --blue-medium: #597298;
+  --b2b-blue-darkest: #1b3255;
+  --lines-dark: #bdc9d6;
+  --lines-darker: #a3afbc;
+  --lines-light: #dee7ef;
+  --serious-blue-dark: var(--fresh-blue);
+  --serious-black: #142032;
+  --serious-orange: #ff7d30;
+  --base: #fff;
+  --near-white: #f8f7fc;
+}

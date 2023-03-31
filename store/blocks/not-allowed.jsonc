@@ -1,0 +1,14 @@
+{
+  "store.custom#not-allow": {
+    "blocks": [
+      "rich-text#notAllowed"
+    ]
+  },
+  "rich-text#notAllowed": {
+    "props": {
+      "text": "## Desculpe, mas você não possui as permissões necessárias para acessar esta loja.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}
