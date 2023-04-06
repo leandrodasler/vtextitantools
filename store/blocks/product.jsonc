@@ -33,11 +33,32 @@
   "flex-layout.row#product": {
     "children": ["flex-layout.col#product"]
   },
+  "condition-layout.product#Threekit": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Asset ID"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#threekit-and-add-to-cart-button",
+      "Else": "flex-layout.row#main"
+    }
+  },
+  "flex-layout.row#threekit-and-add-to-cart-button": {
+    "children": ["flex-layout.col#threekit-and-add-to-cart-button"]
+  },
+  "flex-layout.col#threekit-and-add-to-cart-button": {
+    "children": ["Threekit", "add-to-cart-button"]
+  },
   "flex-layout.col#product": {
     "children": [
       "flex-layout.row#breadcrumb",
+      "condition-layout.product#Threekit",
       // "flex-layout.row#product-details",
-      "flex-layout.row#main",
+      // "flex-layout.row#main",
       "product-kit#buy-together"//, // This block won't work if it's not a direct children of store.product
       // "flex-layout.row#description-and-gallery",
       // "flex-layout.row#features",
