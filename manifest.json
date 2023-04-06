@@ -19,7 +19,7 @@
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
     "vtex.wordpress-integration": "2.x",
-    "vtextitantools.threekit-app": "0.x"
+    "vtextitantools.threekit-app": "1.x"
   },
   "dependencies": {
     "vtex.store": "2.x",
