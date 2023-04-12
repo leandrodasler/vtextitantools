@@ -48,12 +48,12 @@
       "marginBottom": 3,
       "horizontalAlign": "center"
     },
-    "children": [/* "rich-text#size",  */"rich-text#qty"]
+    "children": ["rich-text#specifications", "rich-text#qty"]
   },
 
-  "rich-text#size": {
+  "rich-text#specifications": {
     "props": {
-      "text": "**Size**",
+      "text": "**Product Info**",
       "blockClass": "skuList",
       "width": "50%",
       "textPosition": "CENTER"
@@ -90,7 +90,7 @@
       "horizontalAlign": "center"
     },
     "children": [
-      // "flex-layout.col#sku-highlight-size",
+      "flex-layout.col#sku-highlight-size",
       "flex-layout.col#sku-quantity-selector" /* ,
       "flex-layout.col#sku-buy-button" */
     ]
@@ -101,17 +101,17 @@
       "width": "50%",
       "verticalAlign": "middle"
     },
-    "children": ["sku-highlights#size"]
+    "children": [/* "sku-highlights#size",  */"sku-name"]
   },
 
   "sku-highlights#size": {
     "props": {
       "conditional": {
         // "highlight": "admin/editor.sku-list.highlights.chooseDefaultSpecification",
-        "highlight": "admin/editor.sku-list.highlights.allSpecifications"//,
-        // "typeSpecifications": "SIZE"
+        "highlight": "admin/editor.sku-list.highlights.allSpecifications"
+        // "typeSpecifications": "Drill Bit Size"
       },
-      "showLabel": false
+      "showLabel": true
     }
   },
 

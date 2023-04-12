@@ -47,6 +47,12 @@
   justify-content: center;
 }
 
+.skuName {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
 /* b2b-last-orders */
 .orderDetails,
 .arrow {
