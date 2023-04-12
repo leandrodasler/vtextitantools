@@ -28,6 +28,10 @@
   text-transform: initial;
 }
 
+.searchBanner--one {
+  margin: 0 auto 1rem;
+}
+
 @media (max-width: 64rem) {
   .biggy-autocomplete {
     padding: 0;

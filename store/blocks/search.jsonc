@@ -54,11 +54,7 @@
     }
   },
   "search-result-layout": {
-    "blocks": [
-      "search-result-layout.desktop.product-comparison",
-      "search-result-layout.mobile",
-      "search-not-found-layout"
-    ],
+    "blocks": ["search-result-layout.desktop.product-comparison", "search-result-layout.mobile", "search-not-found-layout"],
     "props": {
       "fullWidth": true
     }
@@ -66,7 +62,7 @@
   "search-result-layout.desktop.product-comparison": {
     "children": [
       "flex-layout.row#searchLayout",
-      "product-comparison-drawer"/* ,
+      "product-comparison-drawer" /* ,
       "flex-layout.row#blog" */
     ],
     "props": {
@@ -87,16 +83,25 @@
     }
   },
   "flex-layout.col#pageContent": {
-    "children": [/* "flex-layout.row#imageList",  */"flex-layout.col#search-content"],
+    "children": ["flex-layout.col#search-content"],
     "props": {
       "blockClass": "pageContent",
       "preventVerticalStretch": true,
       "width": "grow"
     }
   },
+  "search-banner#top": {
+    "props": {
+      "area": "one",
+      "blockClass": "one",
+      "horizontalAlignment": "center"
+    },
+    "title": "Banner Topo Busca"
+  },
   "flex-layout.col#search-content": {
     "children": [
       "flex-layout.row#searchbread",
+      "search-banner#top",
       "flex-layout.row#searchtitle",
       // "flex-layout.row#SEOText",
       // Deprecated
@@ -216,6 +221,7 @@
     "children": [
       // "flex-layout.row#imageList--mobile",
       "flex-layout.row#searchbread",
+      "search-banner#top",
       "flex-layout.row#searchtitle",
       // "flex-layout.row#SEOText",
       // Deprecated
@@ -224,7 +230,7 @@
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore"/* ,
+      "flex-layout.row#fetchmore" /* ,
       "flex-layout.row#blogMobile" */
     ],
     "props": {
@@ -242,11 +248,7 @@
     }
   },
   "flex-layout.row#searchinfomobile": {
-    "children": [
-      "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
-    ],
+    "children": ["flex-layout.col#orderByMobile", "flex-layout.col#filterMobile", "flex-layout.col#switcherMobile"],
     "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
