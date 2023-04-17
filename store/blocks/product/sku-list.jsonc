@@ -142,7 +142,7 @@
       "rowGap": 3
     },
     "children": [
-      // "flex-layout.col#sku-highlight-size-mobile",
+      "flex-layout.col#sku-highlight-size-mobile",
       "flex-layout.col#sku-quantity-selector-mobile" /* ,
       "flex-layout.col#sku-buy-button" */
     ]
@@ -154,7 +154,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
-    "children": ["sku-highlights#size-mobile"]
+    "children": [/*"sku-highlights#size-mobile"*/"sku-name"]
   },
 
   "sku-highlights#size-mobile": {
