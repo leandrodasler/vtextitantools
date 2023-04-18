@@ -66,6 +66,7 @@
       "flex-layout.row#blog" */
     ],
     "props": {
+      "showFacetQuantity": true,
       "pagination": "show-more",
       "preventRouteChange": false,
       "mobileLayout": {

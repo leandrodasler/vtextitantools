@@ -30,6 +30,7 @@
     "children": [
       "responsive-layout.desktop#sku-list-header",
       "sku-list",
+      "progressive-discount-table",
       "flex-layout.row#add-all-to-cart-button"
     ],
     "props": {
