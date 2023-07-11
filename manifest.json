@@ -19,7 +19,8 @@
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
     "vtex.wordpress-integration": "2.x",
-    "vtextitantools.threekit-app": "1.x"
+    "vtextitantools.threekit-app": "1.x",
+    "ssesandbox04.seller-page": "0.x"
   },
   "dependencies": {
     "vtex.store": "2.x",
@@ -84,8 +85,7 @@
     "vtex.overlay-layout": "0.x",
     "vtex.storefront-permissions-ui": "1.x",
     "ssesandbox04.b2b-suite-bra": "0.x",
-    "ssesandbox04.progressive-discount-table": "1.x",
-    "ssesandbox04.seller-page": "0.x"
+    "ssesandbox04.progressive-discount-table": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
