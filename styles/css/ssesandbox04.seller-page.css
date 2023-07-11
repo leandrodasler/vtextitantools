@@ -1,0 +1,12 @@
+.sellerLink {
+    text-decoration: none;
+  }
+  
+  .sellerLink:focus :global(.vtex-seller-selector-0-x-sellerName),
+  .sellerLink:hover :global(.vtex-seller-selector-0-x-sellerName) {
+    color: var(--fresh-blue);
+  }
+  
+  .priceContainer {
+    padding: 1rem 0;
+  }
