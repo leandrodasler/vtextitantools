@@ -4,6 +4,7 @@
       "flex-layout.row#brand-and-rating",
       "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
+      "seller-page-link",
       // "sku-selector#desktop",
       "check-permission#sku-list",
       // "flex-layout.row#sku-list",
@@ -17,6 +18,9 @@
       "preventVerticalStretch": true,
       "width": "45%"
     }
+  },
+  "seller-page-link": {
+    "children": ["seller-pdp-text"]
   },
   "flex-layout.row#brand-and-rating": {
     "children": [
