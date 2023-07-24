@@ -9,6 +9,7 @@
   },
 
   "flex-layout.row#newsletter": {
+    "title": "Newsletter",
     "children": ["flex-layout.col#newsletter-text", "newsletter-form"],
     "props": {
       "blockClass": ["items-center", "bg-blue-medium"],

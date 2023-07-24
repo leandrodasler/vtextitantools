@@ -8,6 +8,7 @@
   },
 
   "header-layout.desktop": {
+    "title": "Header - Desktop",
     "children": ["flex-layout.row#demo-store-warning", "sticky-layout#desktop"]
   },
 
@@ -212,6 +213,7 @@
   },
 
   "header-layout.mobile": {
+    "title": "Header - Mobile",
     "children": ["flex-layout.row#demo-store-warning", "sticky-layout#mobile"]
   },
 

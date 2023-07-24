@@ -188,7 +188,6 @@
   // },
   /* Seus Últimos Pedidos */
   "flex-layout.row#last-orders": {
-    "title": "Last Orders",
     "props": {
       "blockClass": "last-orders"
     },
@@ -251,6 +250,7 @@
   },
 
   "b2b-last-orders#desktop": {
+    "title": "B2B Last Ordes - Desktop",
     "props": {
       "limit": 5,
       "orderDetailsPlacement": "right"
@@ -258,6 +258,7 @@
   },
 
   "b2b-last-orders#mobile": {
+    "title": "B2B Last Ordes - Mobile",
     "props": {
       "limit": 3,
       "orderDetailsPlacement": "top"
@@ -265,7 +266,6 @@
   },
 
   "flex-layout.row#representative-area": {
-    "title": "Representative Area",
     "props": {
       "blockClass": "representative-area"
     },
@@ -521,6 +521,7 @@
     }
   },
   "flex-layout.row#imageBanners": {
+    "title": "3 Columns Image Banners",
     "props": {
       "blockClass": "imageBanners",
       "preventHorizontalStretch": true
