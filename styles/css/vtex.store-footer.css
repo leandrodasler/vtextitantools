@@ -1,5 +1,5 @@
 .footerLayout {
-  background: #e7e9ee;
+  background: var(--serious-black);
   padding-top: 40px;
   padding-bottom: 0px;
 }

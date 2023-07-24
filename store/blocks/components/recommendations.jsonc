@@ -57,7 +57,9 @@
       "slider-layout#recommendationsProducts"
     ],
     "props": {
-      "orderBy": "OrderByBestDiscountDESC"
+      "orderBy": "OrderByBestDiscountDESC",
+      "maxItems": 12,
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
   "list-context.product-list#recommendationsMobile": {
@@ -69,21 +71,22 @@
     ],
     "props": {
       "orderBy": "OrderByBestDiscountDESC"/* ,
-      "maxItems": "4" */
+      "maxItems": "4" */,
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
   "slider-layout#recommendationsProducts": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
+        "desktop": 4,
+        "tablet": 2,
         "phone": 1
       },
+      "centerMode": "to-the-left",
       "infinite": false,
       "fullWidth": true,
-      "blockClass": "shelfTrending"/* ,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "desktopOnly" */
+      "blockClass": "shelfTrending",
+      "showNavigationArrows": "desktopOnly"
     }
   }
 }

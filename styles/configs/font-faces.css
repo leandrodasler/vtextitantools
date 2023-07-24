@@ -31,3 +31,10 @@
     url("assets/fonts/Fabriga.ttf") format("ttf");
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "VTEX Trust";
+  src: url("assets/fonts/VTEXTrustFull-VF.woff2") format("woff2"),
+    url("assets/fonts/VTEXTrustFull-VF.ttf") format("ttf");
+  font-weight: normal;
+}

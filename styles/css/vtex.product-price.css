@@ -1,17 +1,12 @@
 .sellingPrice--desktop {
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 32px;
-  color: var(--black-medium);
+  color: var(--black-dark);
 }
 
 .sellingPrice .sellingPriceValue--desktop {
   display: none;
-}
-
-.sellingPriceWithTax--desktop {
-  font-size: 28px;
-  color: var(--fresh-blue);
 }
 
 .listPrice--desktop {
@@ -19,6 +14,15 @@
   line-height: 20px;
   text-decoration-line: line-through;
   color: var(--black-medium);
+}
+
+.installments {
+  font-size: 0.75rem;
+  color: var(--black-medium);
+}
+
+.installmentsTotalValue {
+  font-weight: 600;
 }
 
 .savings--desktop {

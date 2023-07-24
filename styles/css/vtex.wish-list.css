@@ -4,11 +4,12 @@
   height: 25px;
   display: block;
   border-radius: 50%;
-  background: #fff;
+  background: transparent;
   transition: all .3s ease;
   opacity: 1;
   text-align: center;
-  right: 10px;
+  right: 0;
+  top: -10px;
 }
 
 .wishlistIconContainer :global(.vtex-button):hover,

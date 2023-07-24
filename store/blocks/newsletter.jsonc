@@ -33,6 +33,7 @@
 
   "rich-text#newsletter-subtitle": {
     "props": {
+      "blockClass": "newsletter-text",
       "text": "#### And receive our latest news and offers first-hand."
     }
   },
