@@ -131,6 +131,11 @@
       "blockClass": "b2b-user-widget"
     }
   },
+  "b2b-user-widget": {
+    "props": {
+      "showLoadingIndicator": true
+    }
+  },
   "link#b2b-user-widget-link-1": {
     "props": {
       "label": "Gerenciar organização",
@@ -221,7 +226,7 @@
     "children": [
       "flex-layout.row#mobileHeader",
       "check-permission#menuLinks",
-      "check-permission#reseller-overlay-trigger"
+      "check-permission#reseller-overlay-trigger-mobile"
       // "slider-layout#menuLinks"
     ],
     "props": {

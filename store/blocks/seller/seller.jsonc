@@ -96,7 +96,8 @@
         "customer-admin",
         "customer-approver",
         "customer-buyer"
-      ]
+      ],
+      "LoadingContent": "skeleton#seller-price"
     },
     "blocks": [
       "allowed-content#product-seller-page",
@@ -108,5 +109,10 @@
       "seller-product-price"
       // "add-to-cart-button#buy-now"
     ]
+  },
+  "skeleton#seller-price": {
+    "props": {
+      "height": 50
+    }
   }
 }

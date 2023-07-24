@@ -1,4 +1,5 @@
 .checkPermissionsBlock--resellerOverlayTrigger {
   background-color: var(--serious-black);
   text-align: center;
+  height: 100%;
 }
