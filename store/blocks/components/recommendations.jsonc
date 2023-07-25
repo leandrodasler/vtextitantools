@@ -82,7 +82,11 @@
         "tablet": 2,
         "phone": 1
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "fullWidth": true,
       "blockClass": "shelfTrending",

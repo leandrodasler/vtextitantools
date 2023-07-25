@@ -54,6 +54,7 @@
       "images": [
         {
           "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/0a3856ec-7526-49fc-855b-11efc6c874b0___e3c4775a424ee788c2995d456a751c01.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5487ac22-1ff1-4d58-9e30-a4a988c8b2f0___957589e6ef45be74833cf6635bd37416.jpg",
           "title": "Hammer Drill Precision Pro",
           "description": "Hammer Drill Precision Pro",
           "link": {
@@ -61,8 +62,17 @@
           }
         },
         {
-          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/81b4007a-b603-48a3-8fe4-0408cc9fedb6___2ef8ab6f9e0b06ab17cdbfdbef3874f7.png",
-          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/dc2231a0-597f-4ebb-a6eb-d21b85254873___e99caa53fef3bb1bfb03566ab1614ef4.png",
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/dac1cedb-af74-42e3-a3ed-c6afa9a7bc51___a211971cbc3c3fd34051a4d59e575e5d.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/8b4eca92-5169-4f1f-8892-d8d901835db8___cda09b14331d9f5788718d072a4f45d4.jpg",
+          "title": "Jigsaw Saw",
+          "description": "Jigsaw Saw",
+          "link": {
+            "url": "/precision-pro-fspe-100-jigsaw/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/50bdb1f7-7f14-4aaf-84f2-be7bd1b229be___ee9fac38b7b17e8c9d47d80732c7bb51.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5e4471a0-a66b-4a33-8c87-f1433e001031___7d249a9bcb02fa4519094717817733bc.jpg",
           "title": "All day work",
           "description": "All day work",
           "link": {
@@ -70,11 +80,12 @@
           }
         },
         {
-          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/855d423a-9390-420f-89be-69a1204def6d___46caf69c6763ed70b69f836a3da4c3b5.jpg",
-          "title": "DeWALT",
-          "description": "DeWALT",
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/082d37eb-08d3-4320-aabc-abebcb6accf0___8470d20009f0b649dd975588a574e022.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/e9cf961a-9170-4b19-993d-ba36f56f5a4b___42781a35b70ae82bbc13f9dc2ba7b439.jpg",
+          "title": "Cordless Saw",
+          "description": "Cordless Saw",
           "link": {
-            "url": "/saws?_q=saws&map=ft"
+            "url": "/-cordless-reciprocating-saw-precision-pro/p"
           }
         }
       ]
@@ -141,7 +152,7 @@
     },
     "children": [
       "rich-text#shopByTitle",
-      "flex-layout.row#shop-by-categories"//,
+      "flex-layout.row#shop-by-categories" //,
       // "flex-layout.row#categories"
     ]
   },
@@ -513,7 +524,11 @@
         "tablet": 2,
         "phone": 1
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "fullWidth": true,
       "showNavigationArrows": "desktopOnly",

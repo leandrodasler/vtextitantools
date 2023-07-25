@@ -244,7 +244,11 @@
         "phone": 2,
         "tablet": 4
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
@@ -271,7 +275,11 @@
         "phone": 2,
         "tablet": 4
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",

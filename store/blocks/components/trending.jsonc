@@ -1,9 +1,7 @@
 {
   "flex-layout.row#trending": {
     "title": "Product Shelf 1",
-    "children": [
-      "flex-layout.col#trending"
-    ]
+    "children": ["flex-layout.col#trending"]
   },
   "flex-layout.col#trending": {
     "children": [
@@ -13,7 +11,7 @@
   },
   "flex-layout.row#trendingHead": {
     "children": [
-      "rich-text#trendingTitle"/* ,
+      "rich-text#trendingTitle" /* ,
       "link#trending" */
     ],
     "props": {
@@ -36,12 +34,8 @@
   //   }
   // },
   "list-context.product-list#trending": {
-    "blocks": [
-      "product-summary.shelf#list"
-    ],
-    "children": [
-      "slider-layout#trendingProducts"
-    ],
+    "blocks": ["product-summary.shelf#list"],
+    "children": ["slider-layout#trendingProducts"],
     "props": {
       "orderBy": "OrderByNameASC",
       "maxItems": 12,
@@ -55,7 +49,11 @@
         "tablet": 2,
         "phone": 1
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": true,
       "fullWidth": true,
       "blockClass": "shelfTrending",

@@ -697,6 +697,10 @@
   padding: 1rem;
 }
 
+:global(.vtex-product-summary-2-x-container) .container--product-price-message {
+  margin-top: 0.5rem;
+}
+
 .container--product-summary-price-message {
   margin-bottom: 0.5rem;
   padding: 0.5rem;

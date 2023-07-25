@@ -1,11 +1,8 @@
 .wishlistIconContainer {
   position: absolute;
-  width: 25px;
-  height: 25px;
   display: block;
-  border-radius: 50%;
   background: transparent;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   opacity: 1;
   text-align: center;
   right: 0;
@@ -13,27 +10,34 @@
 }
 
 .wishlistIconContainer :global(.vtex-button):hover,
-.wishlistIconContainer :global(.vtex-button){
+.wishlistIconContainer :global(.vtex-button) {
   outline: none;
   background: none;
+  border: none;
 }
 
-.wishlistIconContainer :global(.vtex-button__label){
-  padding: 0;
+.wishlistIconContainer :global(.vtex-button__label) {
+  padding: 0 !important;
 }
 
 .wishlistIcon.outline {
-  background: url("assets/icons/heartIcon.svg");
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='17' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Task List Add' clip-path='url(%23clip0_376_3948)'%3E%3Cpath id='Vector' d='M3.49997 7.00732H6.99997' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_2' d='M3.49997 9.50732H5.49997' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_3' d='M3.49997 12.0073H5.49997' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_4' d='M6.49997 15.5H1.49997C1.23475 15.5 0.980399 15.3946 0.792863 15.2071C0.605326 15.0196 0.499969 14.7652 0.499969 14.5V4C0.499969 3.73478 0.605326 3.48043 0.792863 3.29289C0.980399 3.10536 1.23475 3 1.49997 3H3.99997C3.99997 2.33696 4.26336 1.70107 4.7322 1.23223C5.20104 0.763392 5.83693 0.5 6.49997 0.5C7.16301 0.5 7.7989 0.763392 8.26774 1.23223C8.73658 1.70107 8.99997 2.33696 8.99997 3H11.5C11.7652 3 12.0195 3.10536 12.2071 3.29289C12.3946 3.48043 12.5 3.73478 12.5 4V5.5' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_5' d='M6.49997 3.00732C6.43367 3.00732 6.37008 2.98099 6.32319 2.9341C6.27631 2.88722 6.24997 2.82363 6.24997 2.75732C6.24997 2.69102 6.27631 2.62743 6.32319 2.58055C6.37008 2.53366 6.43367 2.50732 6.49997 2.50732' stroke='%23142032'/%3E%3Cpath id='Vector_6' d='M6.49997 3.00732C6.56627 3.00732 6.62986 2.98099 6.67675 2.9341C6.72363 2.88722 6.74997 2.82363 6.74997 2.75732C6.74997 2.69102 6.72363 2.62743 6.67675 2.58055C6.62986 2.53366 6.56627 2.50732 6.49997 2.50732' stroke='%23142032'/%3E%3Cg id='Group'%3E%3Cpath id='Vector_7' d='M11.5 15.5C12.5608 15.5 13.5783 15.0786 14.3284 14.3284C15.0785 13.5783 15.5 12.5609 15.5 11.5C15.5 10.4391 15.0785 9.42172 14.3284 8.67157C13.5783 7.92143 12.5608 7.5 11.5 7.5C10.4391 7.5 9.42169 7.92143 8.67154 8.67157C7.9214 9.42172 7.49997 10.4391 7.49997 11.5C7.49997 12.5609 7.9214 13.5783 8.67154 14.3284C9.42169 15.0786 10.4391 15.5 11.5 15.5Z' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_8' d='M11.5 9.5V13.5' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_9' d='M9.49997 11.5H13.5' stroke='%23142032' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_376_3948'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 19px;
-  height: 15px;
+  padding: 4px 16px;
+  border-radius: 21px;
+  background-color: var(--near-white);
+  background-position: center center;
+  width: 20px;
+  height: 20px;
 }
 
 .wishlistIcon.fill {
-  background: url("assets/icons/heartFilled.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Cg clip-path='url(%23clip0_364_7485)'%3E%3Cpath d='M4.40909 7.09824H7.90909' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.40909 9.59824H6.40909' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.40909 12.0982H6.40909' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.40909 15.5909H2.40909C2.14387 15.5909 1.88952 15.4856 1.70198 15.298C1.51445 15.1105 1.40909 14.8561 1.40909 14.5909V4.09091C1.40909 3.8257 1.51445 3.57134 1.70198 3.38381C1.88952 3.19627 2.14387 3.09091 2.40909 3.09091H4.90909C4.90909 2.42787 5.17248 1.79199 5.64132 1.32314C6.11016 0.854304 6.74605 0.590912 7.40909 0.590912C8.07213 0.590912 8.70801 0.854304 9.17686 1.32314C9.6457 1.79199 9.90909 2.42787 9.90909 3.09091H12.4091C12.6743 3.09091 12.9287 3.19627 13.1162 3.38381C13.3037 3.57134 13.4091 3.8257 13.4091 4.09091V5.59091' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.40909 3.09824C7.34278 3.09824 7.2792 3.0719 7.23231 3.02502C7.18543 2.97814 7.15909 2.91455 7.15909 2.84824C7.15909 2.78194 7.18543 2.71835 7.23231 2.67147C7.2792 2.62458 7.34278 2.59824 7.40909 2.59824' stroke='%23005757'/%3E%3Cpath d='M7.40909 3.09824C7.47539 3.09824 7.53898 3.0719 7.58587 3.02502C7.63275 2.97814 7.65909 2.91455 7.65909 2.84824C7.65909 2.78194 7.63275 2.71835 7.58587 2.67147C7.53898 2.62458 7.47539 2.59824 7.40909 2.59824' stroke='%23005757'/%3E%3Cpath d='M12.4091 15.5909C13.47 15.5909 14.4874 15.1695 15.2375 14.4193C15.9877 13.6692 16.4091 12.6518 16.4091 11.5909C16.4091 10.53 15.9877 9.51263 15.2375 8.76248C14.4874 8.01234 13.47 7.59091 12.4091 7.59091C11.3482 7.59091 10.3308 8.01234 9.58066 8.76248C8.83052 9.51263 8.40909 10.53 8.40909 11.5909C8.40909 12.6518 8.83052 13.6692 9.58066 14.4193C10.3308 15.1695 11.3482 15.5909 12.4091 15.5909Z' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.1918 10.4276L12.2551 13.0102C12.2121 13.0676 12.1573 13.1151 12.0943 13.1494C12.0314 13.1837 11.9618 13.2041 11.8903 13.2091C11.8188 13.2142 11.747 13.2038 11.6798 13.1787C11.6127 13.1536 11.5517 13.1143 11.5011 13.0636L10.5011 12.0636' stroke='%23005757' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_364_7485'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.909088 0.0909119)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 19px;
-  height: 15px;
+  padding: 4px 16px;
+  border-radius: 21px;
+  background-color: var(--green-light);
+  background-position: center center;
+  width: 20px;
+  height: 20px;
 }
