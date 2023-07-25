@@ -24,7 +24,6 @@
 .term--default {
   color: var(--black-medium);
   font-size: 0.875rem;
-  white-space: nowrap;
 }
 
 .arrow--default,
