@@ -121,6 +121,9 @@
   font-family: Roboto;
   text-transform: lowercase;
 }
+.galleryItem--small {
+  padding: 0.75rem 0;
+}
 @media (max-width: 64rem) {
   .totalProducts--layout {
     padding: 8px 0px;
@@ -135,7 +138,8 @@
     padding: 0;
   }
 
-  .galleryItem--normal :global(.vtex-product-summary-2-x-container--summaryComplete) {
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-container--summaryComplete) {
     max-width: 100%;
   }
 
@@ -211,16 +215,37 @@
     margin: 0;
   }
 
-  .galleryItem--normal :global(.vtex-product-summary-2-x-container--summaryComplete) {
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-container--summaryComplete) {
     border-bottom: 1px solid #e9eff5;
     border-radius: 0px;
     padding: 16px 0px;
   }
 
-  .galleryItem--normal :global(.vtex-product-summary-2-x-element--summaryComplete) {
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-element--summaryComplete) {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     grid-column-gap: 16px;
+  }
+
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-element--summaryComplete)
+    :global(.vtex-product-summary-2-x-nameContainer) {
+    align-items: center;
+  }
+
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-element--summaryComplete)
+    :global(.vtex-product-summary-2-x-imageStackContainer) {
+      height: auto;
+      overflow: auto;
+  }
+
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-element--summaryComplete)
+    :global(.vtex-product-summary-2-x-image) {
+      max-height: unset;
   }
 
   .galleryItem--normal :global(.vtex-product-summary-2-x-imageNormal) {
@@ -228,7 +253,8 @@
     margin-bottom: initial;
   }
 
-  .galleryItem--normal :global(.vtex-product-summary-2-x-productBrandContainer) {
+  .galleryItem--normal
+    :global(.vtex-product-summary-2-x-productBrandContainer) {
     margin-bottom: 4px;
   }
 }

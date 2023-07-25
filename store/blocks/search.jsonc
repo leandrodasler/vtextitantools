@@ -227,7 +227,7 @@
     "children": [
       // "flex-layout.row#imageList--mobile",
       "flex-layout.row#searchbread",
-      "search-banner#top",
+      // "search-banner#top",
       "flex-layout.row#searchtitle",
       // "flex-layout.row#SEOText",
       // Deprecated
