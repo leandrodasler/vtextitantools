@@ -1,28 +1,29 @@
 {
   "store.home": {
-    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
-  },
-  "responsive-layout.desktop": {
+    // "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
     "children": ["b2b-context#desktop"]
   },
+  // "responsive-layout.desktop": {
+  //   "children": ["b2b-context#desktop"]
+  // },
 
   "b2b-context#desktop": {
     "children": [
       // "flex-layout.row#permission-description",
       "check-permission#representative-area",
-      "flex-layout.row#imageList",
-      "flex-layout.row#bannerHero2",
+      "flex-layout.row#sales-channel-banner",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
       // Deprecated
       // "flex-layout.row#shopByBrand",
-      "flex-layout.row#bannerReleases",
+      // "flex-layout.row#bannerReleases",
       "flex-layout.row#trending",
+      "flex-layout.row#full-banner-desktop1",
       // "flex-layout.row#shelf1",
       "flex-layout.row#popular",
       "__fold__",
-      "flex-layout.row#recommendations",
+      // "flex-layout.row#recommendations",
       "flex-layout.row#bannerCoupon",
       "flex-layout.row#imageBanners",
       // "flex-layout.row#benefits",
@@ -31,29 +32,78 @@
     ]
   },
 
-  "flex-layout.row#permission-description": {
-    "props": {
-      "blockClass": "permission-description",
-      "colSizing": "auto"
-    },
-    "children": [
-      "check-permission#store-admin",
-      "check-permission#sales-admin",
-      "check-permission#sales-manager",
-      "check-permission#sales-representative",
-      "check-permission#customer-admin",
-      "check-permission#customer-approver",
-      "check-permission#customer-buyer"
-    ]
-  },
-
-  "flex-layout.row#imageList": {
+  "flex-layout.row#sales-channel-banner": {
+    "title": "Sales Channel Banners",
     "props": {
       "blockClass": "full-banner",
       "fullWidth": true
+      // "marginBottom": 8
     },
-    "children": ["list-context.image-list#homeBanners"]
+    "children": ["flex-layout.col#sales-channel-banner"]
   },
+  "flex-layout.col#sales-channel-banner": {
+    "children": ["sales-channel-banner"]
+  },
+  "sales-channel-banner": {
+    "title": "Sales Channel Banners - Images",
+    "children": ["slider-layout#sales-channel-banner"],
+    "props": {
+      "height": 480,
+      // "heightMobile": 125,
+      "autoplay": 8000,
+      "images": [
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/0a3856ec-7526-49fc-855b-11efc6c874b0___e3c4775a424ee788c2995d456a751c01.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5487ac22-1ff1-4d58-9e30-a4a988c8b2f0___957589e6ef45be74833cf6635bd37416.jpg",
+          "title": "Hammer Drill Precision Pro",
+          "description": "Hammer Drill Precision Pro",
+          "link": {
+            "url": "/hammer-drill/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/dac1cedb-af74-42e3-a3ed-c6afa9a7bc51___a211971cbc3c3fd34051a4d59e575e5d.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/8b4eca92-5169-4f1f-8892-d8d901835db8___cda09b14331d9f5788718d072a4f45d4.jpg",
+          "title": "Jigsaw Saw",
+          "description": "Jigsaw Saw",
+          "link": {
+            "url": "/precision-pro-fspe-100-jigsaw/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/50bdb1f7-7f14-4aaf-84f2-be7bd1b229be___ee9fac38b7b17e8c9d47d80732c7bb51.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5e4471a0-a66b-4a33-8c87-f1433e001031___7d249a9bcb02fa4519094717817733bc.jpg",
+          "title": "All day work",
+          "description": "All day work",
+          "link": {
+            "url": "/precision-pro-impact-drill/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/082d37eb-08d3-4320-aabc-abebcb6accf0___8470d20009f0b649dd975588a574e022.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/e9cf961a-9170-4b19-993d-ba36f56f5a4b___42781a35b70ae82bbc13f9dc2ba7b439.jpg",
+          "title": "Cordless Saw",
+          "description": "Cordless Saw",
+          "link": {
+            "url": "/-cordless-reciprocating-saw-precision-pro/p"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#sales-channel-banner": {
+    "title": "Sales Channel Banners - Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+
   "flex-layout.row#imageList--mobile": {
     "props": {
       "blockClass": ["full-banner", "full-banner--mobile"],
@@ -80,7 +130,6 @@
   },
   "slider-layout#demo-images": {
     "props": {
-      "blockClass": ["homeSlider", "dotsCustom"],
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -91,6 +140,7 @@
     }
   },
   "flex-layout.row#shopByCategory": {
+    "title": "Shop by Categories",
     "props": {
       "blockClass": "shopByCategorySection"
     },
@@ -100,7 +150,11 @@
     "props": {
       "blockClass": "shopByCategory"
     },
-    "children": ["rich-text#shopByTitle", "flex-layout.row#categories"]
+    "children": [
+      "rich-text#shopByTitle",
+      "flex-layout.row#shop-by-categories" //,
+      // "flex-layout.row#categories"
+    ]
   },
   "rich-text#shopByTitle": {
     "props": {
@@ -109,25 +163,40 @@
       "blockClass": "shopByCategoryTitle"
     }
   },
-  "flex-layout.row#categories": {
+  "flex-layout.row#shop-by-categories": {
     "props": {
       "blockClass": "shopByCategory",
       "horizontalAlign": "center",
-      // "verticalAlign": "center",
       "colSizing": "auto",
-      // "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "link#shoBy1",
-      "link#shoBy2",
-      "link#shoBy3",
-      "link#shoBy4",
-      "link#shoBy5",
-      "link#shoBy6"
+      "link#category-1",
+      "link#category-2",
+      "link#category-3",
+      "link#category-4",
+      "link#category-5",
+      "link#category-6"
     ]
   },
+  // "flex-layout.row#categories": {
+  //   "props": {
+  //     "blockClass": "shopByCategory",
+  //     "horizontalAlign": "center",
+  //     "colSizing": "auto",
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true
+  //   },
+  //   "children": [
+  //     "link#shoBy1",
+  //     "link#shoBy2",
+  //     "link#shoBy3",
+  //     "link#shoBy4",
+  //     "link#shoBy5",
+  //     "link#shoBy6"
+  //   ]
+  // },
   /* Seus Últimos Pedidos */
   "flex-layout.row#last-orders": {
     "props": {
@@ -192,6 +261,7 @@
   },
 
   "b2b-last-orders#desktop": {
+    "title": "B2B Last Ordes - Desktop",
     "props": {
       "limit": 5,
       "orderDetailsPlacement": "right"
@@ -199,6 +269,7 @@
   },
 
   "b2b-last-orders#mobile": {
+    "title": "B2B Last Ordes - Mobile",
     "props": {
       "limit": 3,
       "orderDetailsPlacement": "top"
@@ -228,236 +299,235 @@
     }
   },
 
-  /**/
-  "link#shoBy1": {
-    "children": ["image#shoBy1", "rich-text#cat1"],
+  /* New categories section */
+  "link#category-1": {
+    "children": ["image#category-1"],
     "props": {
-      "href": "/feminino",
-      "blockClass": "shopByLink"
+      "label": "Drills",
+      "href": "/tools/drills",
+      "blockClass": "link-category"
     }
   },
-  "link#shoBy2": {
-    "children": ["image#shoBy2", "rich-text#cat2"],
+  "image#category-1": {
     "props": {
-      "href": "/masculino",
-      "blockClass": "shopByLink"
+      "src": "assets/categories/drills.png"
     }
   },
-  "link#shoBy3": {
-    "children": ["image#shoBy3", "rich-text#cat3"],
+  "link#category-2": {
+    "children": ["image#category-2"],
     "props": {
-      "href": "/calcados",
-      "blockClass": "shopByLink"
+      "label": "Hand Tools",
+      "href": "/tools/hand-tools",
+      "blockClass": "link-category"
     }
   },
-  "link#shoBy4": {
-    "children": ["image#shoBy4", "rich-text#cat4"],
+  "image#category-2": {
     "props": {
-      "href": "/infantil",
-      "blockClass": "shopByLink"
+      "src": "assets/categories/handtools.png"
     }
   },
-  "link#shoBy5": {
-    "children": ["image#shoBy5", "rich-text#cat5"],
+  "link#category-3": {
+    "children": ["image#category-3"],
     "props": {
-      "href": "/accessories",
-      "blockClass": "shopByLink"
+      "label": "Kits",
+      "href": "/Kits?_q=kits&map=ft",
+      "blockClass": "link-category"
     }
   },
-  "link#shoBy6": {
-    "children": ["image#shoBy6", "rich-text#cat6"],
+  "image#category-3": {
     "props": {
-      "href": "/brands",
-      "blockClass": "shopByLink"
+      "src": "assets/categories/kits.png"
     }
   },
-  "image#shoBy1": {
+  "link#category-4": {
+    "children": ["image#category-4"],
     "props": {
-      "src": "assets/icons/category-female.svg",
-      "blockClass": "shoByImage"
+      "label": "Sanders & Grinders",
+      "href": "/Sanders%20and%20Grinders?_q=sanders%20and%20grinders&map=ft",
+      "blockClass": "link-category"
     }
   },
-  "image#shoBy2": {
+  "image#category-4": {
     "props": {
-      "src": "assets/icons/category-male.svg",
-      "blockClass": "shoByImage"
+      "src": "assets/categories/sanders.png"
     }
   },
-  "image#shoBy3": {
+  "link#category-5": {
+    "children": ["image#category-5"],
     "props": {
-      "src": "assets/icons/category-shoes.svg",
-      "blockClass": "shoByImage"
+      "label": "Saws",
+      "href": "/tools/saws",
+      "blockClass": "link-category"
     }
   },
-  "image#shoBy4": {
+  "image#category-5": {
     "props": {
-      "src": "assets/icons/category-childish.svg",
-      "blockClass": "shoByImage"
+      "src": "assets/categories/saws.png"
     }
   },
-  "image#shoBy5": {
+  "link#category-6": {
+    "children": ["image#category-6"],
     "props": {
-      "src": "assets/icons/category-accessories.svg",
-      "blockClass": "shoByImage"
+      "label": "Measuring Tools",
+      "href": "/Measuring%20Tools?_q=measuring%20tools&map=ft",
+      "blockClass": "link-category"
     }
   },
-  "image#shoBy6": {
+  "image#category-6": {
     "props": {
-      "src": "assets/icons/category-brands.svg",
-      "blockClass": "shoByImage"
-    }
-  },
-  "rich-text#cat1": {
-    "props": {
-      "text": "Women",
-      "blockClass": "shopByCategory"
-    }
-  },
-  "rich-text#cat2": {
-    "props": {
-      "text": "Men",
-      "blockClass": "shopByCategory"
-    }
-  },
-  "rich-text#cat3": {
-    "props": {
-      "text": "Footwear",
-      "blockClass": "shopByCategory"
-    }
-  },
-  "rich-text#cat4": {
-    "props": {
-      "text": "Children",
-      "blockClass": "shopByCategory"
-    }
-  },
-  "rich-text#cat5": {
-    "props": {
-      "text": "Accessories",
-      "blockClass": "shopByCategory"
-    }
-  },
-  "rich-text#cat6": {
-    "props": {
-      "text": "Brands",
-      "blockClass": "shopByCategory"
+      "src": "assets/categories/measuringtools.png"
     }
   },
 
-  // Deprecated
-  // "flex-layout.row#shopByBrand": {
-  //   "children": ["flex-layout.col#shopByBrand"]
-  // },
-  // "flex-layout.col#shopByBrand": {
-  //   "props": {
-  //     "blockClass": "shopByBrand"
-  //   },
-  //   "children": [
-  //     "rich-text#sectionTitle",
-  //     "list-context.image-list#brandImages"
-  //   ]
-  // },
-  // "rich-text#sectionTitle": {
-  //   "props": {
-  //     "text": "### Shop by brand",
-  //     "blockClass": "sectionTitle"
-  //   }
-  // },
-  // "list-context.image-list#brandImages": {
-  //   "children": ["slider-layout#brand-images"],
-  //   "props": {
-  //     "height": 328,
-  //     "images": [
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/placeholders/AppleBrand.png",
-  //         "description": "something something",
-  //         "link": {
-  //           "url": "/apple"
-  //         }
-  //       }
-  //     ]
-  //   }
-  // },
-  // "slider-layout#brand-images": {
-  //   "props": {
-  //     "blockClass": "brandSlider",
-  //     "itemsPerPage": {
-  //       "desktop": 6,
-  //       "tablet": 4,
-  //       "phone": 3
-  //     },
-  //     "infinite": false
-  //   }
-  // },
-
-  "flex-layout.row#shelf1": {
-    "children": ["list-context.product-list#productSlider"],
+  "flex-layout.row#full-banner-desktop1": {
+    "children": ["image#full-banner-desktop1"],
     "props": {
-      "blockClass": "shelfComplete"
-    }
-  },
-  "list-context.product-list#productSlider": {
-    "blocks": ["product-summary.shelf#list"],
-    "children": ["slider-layout#products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": false,
+      "paddingTop": 8,
+      "paddingBottom": 8,
       "fullWidth": true,
-      "showPaginationDots": "desktopOnly",
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "shelfStyle1"
-    }
+      "horizontalAlign": "center"
+    },
+    "title": "Full Banner 1"
   },
+  "image#full-banner-desktop1": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/792d490e-0f8c-4c14-a9a5-743b0a33ee8a___705b59afe79e21dbb946d02d775ed98b.jpg",
+      "alt": "Tool Kits",
+      "title": "Tool Kits",
+      "link": {
+        "url": "/kits"
+      }
+    },
+    "title": "Full Banner 1 - Imagem"
+  },
+
+  /**/
+  // "link#shoBy1": {
+  //   "children": ["image#shoBy1", "rich-text#cat1"],
+  //   "props": {
+  //     "href": "/feminino",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "link#shoBy2": {
+  //   "children": ["image#shoBy2", "rich-text#cat2"],
+  //   "props": {
+  //     "href": "/masculino",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "link#shoBy3": {
+  //   "children": ["image#shoBy3", "rich-text#cat3"],
+  //   "props": {
+  //     "href": "/calcados",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "link#shoBy4": {
+  //   "children": ["image#shoBy4", "rich-text#cat4"],
+  //   "props": {
+  //     "href": "/infantil",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "link#shoBy5": {
+  //   "children": ["image#shoBy5", "rich-text#cat5"],
+  //   "props": {
+  //     "href": "/accessories",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "link#shoBy6": {
+  //   "children": ["image#shoBy6", "rich-text#cat6"],
+  //   "props": {
+  //     "href": "/brands",
+  //     "blockClass": "shopByLink"
+  //   }
+  // },
+  // "image#shoBy1": {
+  //   "props": {
+  //     "src": "assets/icons/category-female.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "image#shoBy2": {
+  //   "props": {
+  //     "src": "assets/icons/category-male.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "image#shoBy3": {
+  //   "props": {
+  //     "src": "assets/icons/category-shoes.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "image#shoBy4": {
+  //   "props": {
+  //     "src": "assets/icons/category-childish.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "image#shoBy5": {
+  //   "props": {
+  //     "src": "assets/icons/category-accessories.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "image#shoBy6": {
+  //   "props": {
+  //     "src": "assets/icons/category-brands.svg",
+  //     "blockClass": "shoByImage"
+  //   }
+  // },
+  // "rich-text#cat1": {
+  //   "props": {
+  //     "text": "Women",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+  // "rich-text#cat2": {
+  //   "props": {
+  //     "text": "Men",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+  // "rich-text#cat3": {
+  //   "props": {
+  //     "text": "Footwear",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+  // "rich-text#cat4": {
+  //   "props": {
+  //     "text": "Children",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+  // "rich-text#cat5": {
+  //   "props": {
+  //     "text": "Accessories",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+  // "rich-text#cat6": {
+  //   "props": {
+  //     "text": "Brands",
+  //     "blockClass": "shopByCategory"
+  //   }
+  // },
+
   "slider-layout#productsMobile": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
+        "desktop": 4,
+        "tablet": 2,
         "phone": 1
+      },
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
       },
       "infinite": false,
       "fullWidth": true,
@@ -466,6 +536,7 @@
     }
   },
   "flex-layout.row#imageBanners": {
+    "title": "3 Columns Image Banners",
     "props": {
       "blockClass": "imageBanners",
       "preventHorizontalStretch": true
@@ -511,31 +582,31 @@
   },
   "image#banner-1": {
     "props": {
-      "src": "assets/banners/tshirts.png",
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/c48c9332-13e3-4a9a-a367-087460a86278___4b2ba3c2be87f778bbae074c80dd1b5f.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/t-shirts"
+        "url": "#"
       }
     }
   },
   "image#banner-2": {
     "props": {
-      "src": "assets/banners/outlet.png",
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/7ba4886e-c880-477c-af0c-3de5967b26d4___c16505051ea9a14475097bdfd9b2ad5c.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/outlet"
+        "url": "#"
       }
     }
   },
   "image#banner-3": {
     "props": {
-      "src": "assets/banners/summersale.png",
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/60f093a4-3a35-4152-b748-2888818d1d06___2440e0d5e9ab76533d4b4a3c4fb5a21a.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/summer"
+        "url": "#"
       }
     }
   },
@@ -609,27 +680,23 @@
     }
   },
   "flex-layout.row#bannerCoupon": {
+    "title": "Full Banner 2",
     "props": {
       "blockClass": "full-banner",
+      "paddingTop": 8,
       "fullWidth": true
     },
-    "children": ["list-context.image-list#bannerCoupon"]
+    "children": ["image#full-banner-desktop2"]
   },
-  "list-context.image-list#bannerCoupon": {
-    "children": ["slider-layout#demo-images"],
+  "image#full-banner-desktop2": {
     "props": {
-      "height": 480,
-      "images": [
-        {
-          "width": "1440px",
-          "image": "assets/banners/wholesale-purchase.png",
-          "mobileImage": "assets/banners/wholesale-purchase.png",
-          "description": "Cupom de desconto",
-          "link": {
-            "url": "/coupon"
-          }
-        }
-      ]
-    }
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/81f76a7a-a888-4b93-8554-d8b7c3e44dc8___d2ae5f08a092f3d1ecc80d6c72ed13b7.png",
+      "alt": "10% OFF",
+      "title": "10% OFF",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "Full Banner 2 - Imagem"
   }
 }

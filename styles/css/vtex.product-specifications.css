@@ -11,10 +11,19 @@
   color: #000;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--row-specifications-shelf)
+  .specificationValue {
+  color: var(--black-medium);
+}
+
 .specificationName--bullet-list {
   display: block;
   columns: auto 2;
   line-height: 2.5;
   width: 100%;
   white-space: pre-wrap;
+}
+.specificationValue:not(:last-child)::after {
+  content: "-";
+  margin: 0 5px;
 }

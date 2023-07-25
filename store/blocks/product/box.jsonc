@@ -42,7 +42,8 @@
     },
     "blocks": [
       "allowed-content#product-price",
-      "disallowed-content#product-price"
+      "disallowed-content#product-price",
+      "loading-content#product-price"
     ]
   },
   "allowed-content#product-price": {
@@ -63,7 +64,7 @@
     ],
     "props": {
       "blockClass": ["product-price-and-location-availability"],
-      "preserveLayoutOnMobile": "true"
+      "preserveLayoutOnMobile": true
     }
   },
   "flex-layout.col#product-price-box": {
@@ -82,10 +83,10 @@
   },
   "allowed-content#product-price-list": {
     "children": [
-      "flex-layout.row#product-price",
+      "flex-layout.row#product-price"
       // "flex-layout.row#location-availability",
       // "flex-layout.row#product-availability-and-quantity",
-      "flex-layout.row#buy-buttons"
+      // "flex-layout.row#buy-buttons"
     ]
   },
   "disallowed-content#product-price": {
@@ -95,6 +96,14 @@
     "props": {
       "blockClass": ["product-price-message"],
       "text": "Login or register to view prices"
+    }
+  },
+  "loading-content#product-price": {
+    "children": ["skeleton#price"]
+  },
+  "skeleton#price": {
+    "props": {
+      "height": 100
     }
   }
 }

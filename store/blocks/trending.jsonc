@@ -12,7 +12,8 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "default"
+        "simulationBehavior": "default",
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     },
     "blocks": [

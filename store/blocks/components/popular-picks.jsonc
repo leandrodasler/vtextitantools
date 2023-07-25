@@ -1,5 +1,6 @@
 {
   "flex-layout.row#popular": {
+    "title": "Product Shelf 2",
     "children": [
       "flex-layout.col#popular"
     ]
@@ -7,48 +8,31 @@
   "flex-layout.col#popular": {
     "children": [
       "flex-layout.row#popularHead",
-      "responsive-layout.desktop#list",
-      "responsive-layout.mobile#list"
-    ]
-  },
-  "responsive-layout.desktop#list": {
-    "children": [
       "list-context.product-list#popular"
-    ]
-  },
-  "responsive-layout.mobile#list": {
-    "children": [
-      "list-context.product-list#popularMobile"
     ]
   },
   "flex-layout.row#popularHead": {
     "children": [
-      "flex-layout.col#popularHead"/* ,
+      "rich-text#popularTitle"/* ,
       "link#popularLink" */
     ],
     "props": {
-      "blockClass": "popularHead"
+      "blockClass": "trendingHead"
     }
-  },
-  "flex-layout.col#popularHead": {
-    "children": [
-      "rich-text#popularTitle"
-    ]
   },
   "rich-text#popularTitle": {
     "props": {
       "text": "### Popular Products",
-      "textPosition": "CENTER",
-      "blockClass": "popularTitle"
+      "blockClass": "trendingTitle"
     }
   },
-  "link#popularLink": {
-    "props": {
-      "label": "Veja mais",
-      "href": "/popular",
-      "blockClass": "popularLink"
-    }
-  },
+  // "link#popularLink": {
+  //   "props": {
+  //     "label": "Veja mais",
+  //     "href": "/popular",
+  //     "blockClass": "popularLink"
+  //   }
+  // },
   "list-context.product-list#popular": {
     "blocks": [
       "product-summary.shelf#list"
@@ -57,33 +41,27 @@
       "slider-layout#popularProducts"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "list-context.product-list#popularMobile": {
-    "blocks": [
-      "product-summary.shelf#list"
-    ],
-    "children": [
-      "slider-layout#popularProducts"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"/* ,
-      "maxItems": "4" */
+      "orderBy": "OrderByPriceDESC",
+      "maxItems": 12,
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
   "slider-layout#popularProducts": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
+        "desktop": 4,
+        "tablet": 2,
         "phone": 1
       },
-      "infinite": false,
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
+      "infinite": true,
       "fullWidth": true,
-      "blockClass": "shelfTrending"/* ,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "desktopOnly" */
+      "blockClass": "shelfTrending",
+      "showNavigationArrows": "desktopOnly"
     }
   }
 }

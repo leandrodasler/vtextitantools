@@ -1,17 +1,25 @@
 .container--summaryComplete {
   text-align: left;
-  border: 1px solid transparent;
+}
+
+.clearLink {
+  padding: 1rem;
+  border: 2px solid var(--lines-light);
   border-radius: 8px;
-  padding: 20px;
   transition: all 0.3s ease;
+}
+
+.clearLink--summaryComplete:hover {
+  border-color: var(--black-medium);
+}
+
+.container--summaryComplete .imageStackContainer {
+  height: 170px;
+  overflow: hidden;
 }
 
 .containerNormal--minimumSummary {
   padding: 0 0.5rem;
-}
-
-.container--summaryComplete:hover {
-  border-color: var(--fresh-blue);
 }
 
 .container--summaryComplete:hover
@@ -39,6 +47,12 @@
   background-color: #ff5f00;
   height: 48px;
   border-radius: 4px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .priceContainer {
@@ -80,15 +94,13 @@
 
 .container--summaryComplete .productNameContainer {
   width: 100%;
-  margin-bottom: 16px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 
 .container--summaryComplete .nameContainer .brandName {
-  font-size: 20px;
+  color: var(--serious-black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 .container--summaryComplete .buyButtonContainer,
@@ -100,10 +112,7 @@
 }
 
 .container--summaryComplete .image {
-  margin-bottom: 16px;
-  /* width: 196px;
-  height: 196px; */
-  max-height: 380px;
+  max-height: 170px;
   object-fit: contain;
 }
 

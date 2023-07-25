@@ -182,6 +182,10 @@
   margin-right: 60px;
 }
 
+.imageElementLink {
+  width: auto !important;
+}
+
 .userAddressContainer .container {
   padding: 0;
 }
@@ -193,11 +197,6 @@
 
   .container {
     padding: 0px 16px;
-  }
-
-  .imageElement--homeSlider {
-    max-height: 384px !important;
-    object-fit: cover;
   }
 
   .newsletter {

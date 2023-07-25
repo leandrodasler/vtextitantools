@@ -4,7 +4,8 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "default"
+        "simulationBehavior": "default",
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -16,7 +17,8 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "default"
+        "simulationBehavior": "default",
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -26,7 +28,8 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 20
+        "maxItemsPerPage": 20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       },
       "fullWidth": true
     }
@@ -37,7 +40,8 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 20
+        "maxItemsPerPage": 20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       },
       "fullWidth": true
     }
@@ -48,7 +52,8 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "maxItemsPerPage": 20
+        "maxItemsPerPage": 20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       },
       "fullWidth": true
     }

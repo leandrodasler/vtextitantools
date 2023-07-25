@@ -25,14 +25,14 @@
       <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="mpa-truck">
-      <path d="M17.3637 1H1V15.4443H17.3637V1Z" stroke="#f71963" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M17.3633 6.55566H21.7269L24.9997 9.88896V15.4444H17.3633V6.55566Z" stroke="#f71963" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.90893 20.9998C7.41516 20.9998 8.63621 19.7562 8.63621 18.2221C8.63621 16.688 7.41516 15.4443 5.90893 15.4443C4.40269 15.4443 3.18164 16.688 3.18164 18.2221C3.18164 19.7562 4.40269 20.9998 5.90893 20.9998Z" stroke="#f71963" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M20.0906 20.9998C21.5968 20.9998 22.8179 19.7562 22.8179 18.2221C22.8179 16.688 21.5968 15.4443 20.0906 15.4443C18.5843 15.4443 17.3633 16.688 17.3633 18.2221C17.3633 19.7562 18.5843 20.9998 20.0906 20.9998Z" stroke="#f71963" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.3637 1H1V15.4443H17.3637V1Z" stroke="#3c4043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.3633 6.55566H21.7269L24.9997 9.88896V15.4444H17.3633V6.55566Z" stroke="#3c4043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5.90893 20.9998C7.41516 20.9998 8.63621 19.7562 8.63621 18.2221C8.63621 16.688 7.41516 15.4443 5.90893 15.4443C4.40269 15.4443 3.18164 16.688 3.18164 18.2221C3.18164 19.7562 4.40269 20.9998 5.90893 20.9998Z" stroke="#3c4043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20.0906 20.9998C21.5968 20.9998 22.8179 19.7562 22.8179 18.2221C22.8179 16.688 21.5968 15.4443 20.0906 15.4443C18.5843 15.4443 17.3633 16.688 17.3633 18.2221C17.3633 19.7562 18.5843 20.9998 20.0906 20.9998Z" stroke="#3c4043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="mpa-home">
-      <path d="M1 8.7L11 1L21 8.7V20.8C21 21.3835 20.7659 21.9431 20.3491 22.3556C19.9324 22.7682 19.3671 23 18.7778 23H3.22222C2.63285 23 2.06762 22.7682 1.65087 22.3556C1.23413 21.9431 1 21.3835 1 20.8V8.7Z" stroke="#f71963" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M7.66699 23V12H14.3337V23" stroke="#f71963" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1 8.7L11 1L21 8.7V20.8C21 21.3835 20.7659 21.9431 20.3491 22.3556C19.9324 22.7682 19.3671 23 18.7778 23H3.22222C2.63285 23 2.06762 22.7682 1.65087 22.3556C1.23413 21.9431 1 21.3835 1 20.8V8.7Z" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7.66699 23V12H14.3337V23" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </defs>
 </svg>

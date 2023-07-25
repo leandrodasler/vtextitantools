@@ -8,6 +8,7 @@
   },
 
   "header-layout.desktop": {
+    "title": "Header - Desktop",
     "children": ["flex-layout.row#demo-store-warning", "sticky-layout#desktop"]
   },
 
@@ -130,6 +131,11 @@
       "blockClass": "b2b-user-widget"
     }
   },
+  "b2b-user-widget": {
+    "props": {
+      "showLoadingIndicator": true
+    }
+  },
   "link#b2b-user-widget-link-1": {
     "props": {
       "label": "Gerenciar organização",
@@ -207,11 +213,12 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://vtextitantools.vteximg.com.br/arquivos/logo_rosa.png"
+      "url": "https://vtextitantools.vteximg.com.br/arquivos/orange-titantools-logo.svg"
     }
   },
 
   "header-layout.mobile": {
+    "title": "Header - Mobile",
     "children": ["flex-layout.row#demo-store-warning", "sticky-layout#mobile"]
   },
 
@@ -219,7 +226,7 @@
     "children": [
       "flex-layout.row#mobileHeader",
       "check-permission#menuLinks",
-      "check-permission#reseller-overlay-trigger"
+      "check-permission#reseller-overlay-trigger-mobile"
       // "slider-layout#menuLinks"
     ],
     "props": {
@@ -237,7 +244,11 @@
         "phone": 2,
         "tablet": 4
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
@@ -264,7 +275,11 @@
         "phone": 2,
         "tablet": 4
       },
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",

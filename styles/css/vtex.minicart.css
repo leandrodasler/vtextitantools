@@ -63,6 +63,20 @@
   outline: none;
 }
 
+.minicartContainer :global(.vtex-button) {
+  color: var(--serious-black);
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 64rem) {
+  .minicartContainer :global(.vtex-button)::after {
+    content: "Shopping cart";
+    font-size: 1rem;
+    text-transform: none;
+  }
+}
+
 @media (max-width: 64rem) {
   .openIconContainer {
     padding: 0;

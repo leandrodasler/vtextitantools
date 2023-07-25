@@ -7,12 +7,55 @@
   },
   "flex-layout.col#product-price": {
     "children": [
-      "product-list-price#desktop",
-      "flex-layout.row#price"/* ,
-      "flex-layout.row#priceSavings" */
+      "flex-layout.row#prices-and-discount",
+      // "product-list-price#desktop",
+      // "flex-layout.row#price",
+      "product-installments"
+      // "flex-layout.row#priceSavings"
     ],
     "props": {
       "blockClass": "product-price"
+    }
+  },
+  "flex-layout.row#prices-and-discount": {
+    "props": {
+      "colGap": 4,
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "paddingBottom": 2
+    },
+    "children": [
+      "flex-layout.col#list-and-selling-price",
+      "flex-layout.col#discount"
+    ]
+  },
+  "flex-layout.col#list-and-selling-price": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "listAndSellingPrice"
+    },
+    "children": [
+      "product-list-price#desktop",
+      "flex-layout.row#price"
+    ]
+  },
+  "flex-layout.col#discount": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#discount"
+    ]
+  },
+  "rich-text#discount": {
+    "props": {
+      "blockClass": "discount",
+      "text": "Transfer/FedNow<br>(3% discount)"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "installmentsCriteria": "max-quantity"
     }
   },
   "flex-layout.row#priceSavings": {
@@ -40,7 +83,7 @@
   "product-selling-price#desktop": {
     "props": {
       "blockClass": ["desktop"],
-      "message": "{sellingPriceWithTax}/un."
+      "message": "{sellingPriceWithTax}"
     }
   },
   "product-list-price#desktop": {

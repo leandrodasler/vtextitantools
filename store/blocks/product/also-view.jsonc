@@ -22,17 +22,23 @@
     "blocks": ["product-summary.shelf#list"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "maxItems": 12
+      "maxItems": 12,
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
   "slider-layout#alsoView": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
+        "desktop": 4,
+        "tablet": 2,
         "phone": 1
       },
-      "infinite": false,
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelfAlsoView",
       "showNavigationArrows": "desktopOnly"

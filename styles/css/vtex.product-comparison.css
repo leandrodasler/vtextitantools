@@ -1,5 +1,5 @@
 .drawerContainer {
-  z-index: 6;
+  z-index: 999;
 }
 
 .productSelectorContainer {

@@ -32,11 +32,37 @@
         "customer-admin",
         "customer-approver",
         "customer-buyer"
-      ]
+      ],
+      "LoadingContent": "rich-text#loading-content"
     },
     "blocks": [
       "allowed-content#reseller-overlay-trigger",
       "disallowed-content#reseller"
+    ]
+  },
+  "rich-text#loading-content": {
+    "props": {
+      "blockClass": "loading-content-overlay",
+      "text": "Loading...",
+      "font": "t-small",
+      "textColor": "c-on-base--inverted",
+      "textPosition": "CENTER"
+    }
+  },
+  "check-permission#reseller-overlay-trigger-mobile": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-overlay-trigger"
     ]
   },
   "allowed-content#reseller-overlay-trigger": {
@@ -191,11 +217,29 @@
         "customer-admin",
         "customer-approver",
         "customer-buyer"
-      ]
+      ],
+      "LoadingContent": "slider-layout#menu-loading"
     },
     "blocks": [
       "allowed-content#menuLinksLogged",
       "disallowed-content#menuLinksNotLogged"
+    ]
+  },
+  "slider-layout#menu-loading": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 1,
+        "tablet": 1
+      },
+      "centerMode": "center",
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "stripeSlider",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#loading-content"
     ]
   },
   "allowed-content#menuLinksLogged": {
@@ -207,6 +251,7 @@
 
   /* Seção na home de área do representante da organização */
   "check-permission#representative-area": {
+    "title": "Representative Area",
     "props": {
       "roles": [
         // "store-admin",
@@ -226,6 +271,7 @@
 
   /* Seção na home de últimos pedidos da organização */
   "check-permission#lastOrders": {
+    "title": "Last Orders",
     "props": {
       "roles": [
         "store-admin",

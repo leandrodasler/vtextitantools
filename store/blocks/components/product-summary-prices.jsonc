@@ -26,7 +26,8 @@
         "customer-admin",
         "customer-approver",
         "customer-buyer"
-      ]
+      ],
+      "LoadingContent": "skeleton#price"
     },
     "blocks": [
       "allowed-content#product-price-list",

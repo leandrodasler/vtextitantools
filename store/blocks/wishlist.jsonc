@@ -29,15 +29,19 @@
   "slider-layout#wishlist": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
       "infinite": false,
       "fullWidth": true,
-      "showPaginationDots": "desktopOnly",
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "shelfStyle1"
+      "blockClass": "shelfStyle1",
+      "showNavigationArrows": "desktopOnly"
     }
   }
 }

@@ -2,31 +2,6 @@
   padding-bottom: 26px;
 }
 
-.sliderArrows--homeSlider {
-  background-color: rgba(0, 51, 100, 0.32) !important;
-  background-repeat: no-repeat !important;
-  border-radius: 50%;
-  height: 48px;
-  padding: 0;
-  width: 48px;
-}
-
-.caretIcon--homeSlider {
-  display: none;
-}
-
-.sliderLeftArrow--homeSlider {
-  background-image: url("assets/icons/chevronLeftWhite.svg") !important;
-  background-position: 17px center !important;
-  left: 16px;
-}
-
-.sliderRightArrow--homeSlider {
-  background-image: url("assets/icons/chevronRightWhite.svg") !important;
-  background-position: 20px center !important;
-  right: 16px;
-}
-
 .paginationDotsContainer {
   bottom: 10px;
 }
@@ -64,6 +39,7 @@
 
 /* BEGIN - Trending Shelf */
 .sliderArrows {
+  opacity: .75;
   padding: 5px;
   border-radius: 50%;
   width: 30px;
@@ -78,17 +54,19 @@
   border: var(--black-medium) solid 1px;
 }
 
-.sliderArrows:active,
 .sliderArrows:hover,
-.sliderArrows:focus,
+.sliderArrows:local(:focus-visible),
 .sliderArrows:local([disabled]) {
   opacity: 1;
   background-color: var(--lines-light) !important;
+  box-shadow: 0 3px 6px 0 var(--serious-black);
 }
 
-.sliderArrows--shelfTrending {
-  top: 30%;
+.sliderLeftArrow--shelfTrending,
+.sliderLeftArrow--shelfAlsoView {
+  display: none;
 }
+
 .sliderArrows--stripeSlider {
   opacity: 0.75;
   color: var(--serious-black);

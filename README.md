@@ -1,3 +1,3 @@
-# VTEX Fashion B2B
+# VTEX Titan Tools
 
-![VTEX Fashion B2B](https://github.com/leandrodasler/bravtexfashionb2b/blob/main/assets/banners/hero-1.png?raw=true)
+![VTEX Titan Tools](https://vtextitantools.vtexassets.com/arquivos/orange-titantools-logo.svg)

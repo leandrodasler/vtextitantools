@@ -55,7 +55,7 @@
   },
   "rich-text#quickTitle": {
     "props": {
-      "text": "Quickorder",
+      "text": "Quick Order",
       "blockClass": "quickTitle"
     }
   },
