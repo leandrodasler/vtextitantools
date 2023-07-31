@@ -279,8 +279,8 @@
         "sales-manager",
         "sales-representative",
         "customer-admin",
-        "customer-approver"/* ,
-        "customer-buyer" */
+        "customer-approver",
+        "customer-buyer"
       ]
     },
     "blocks": ["allowed-content#lastOrders"]
