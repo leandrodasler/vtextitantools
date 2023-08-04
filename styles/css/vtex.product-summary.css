@@ -6,7 +6,7 @@
   padding: 1rem;
   border: 2px solid var(--lines-light);
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: var(--default-transition);
 }
 
 .clearLink--summaryComplete:hover {
@@ -130,7 +130,7 @@
 .element--summaryComplete
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button) {
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: var(--default-transition);
 }
 
 .element--summaryComplete .productPriceClass {
@@ -181,7 +181,7 @@
   border-radius: 8px;
   padding: 16px 24px;
   border: 1px solid transparent;
-  transition: all 0.3s ease;
+  transition: var(--default-transition);
 }
 
 .container--trendingSummary:hover {

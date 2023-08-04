@@ -2,7 +2,7 @@
   position: absolute;
   display: block;
   background: transparent;
-  transition: all 0.3s ease;
+  transition: var(--default-transition);
   opacity: 1;
   text-align: center;
   right: 0;

@@ -4,7 +4,7 @@
 
 .productSelectorContainer {
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: var(--default-transition);
   margin-top: 0.5rem;
 }
 
