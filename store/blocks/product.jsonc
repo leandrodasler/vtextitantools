@@ -27,6 +27,7 @@
       "flex-layout.row#brand-and-rating",
       "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
+      "seller-page-link",
       "flex-layout.row#product-images",
       "check-permission#sku-list",
       "flex-layout.row#assembly-options",
