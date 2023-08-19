@@ -23,14 +23,15 @@
 }
 
 .label {
-  color: var(--serious-black);
   text-transform: initial;
   font-size: 16px;
   line-height: 24px;
 }
 
+.label,
 .profile {
   color: var(--serious-black);
+  max-width: 250px;
 }
 
 @media (max-width: 64rem) {

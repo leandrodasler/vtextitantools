@@ -71,7 +71,7 @@
 
 @media (min-width: 64rem) {
   .minicartContainer :global(.vtex-button)::after {
-    content: "Shopping cart";
+    content: "Cart";
     font-size: 1rem;
     text-transform: none;
   }

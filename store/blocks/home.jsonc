@@ -1,43 +1,29 @@
 {
   "store.home": {
-    // "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
     "children": ["b2b-context#desktop"]
   },
-  // "responsive-layout.desktop": {
-  //   "children": ["b2b-context#desktop"]
-  // },
-
   "b2b-context#desktop": {
     "children": [
-      // "flex-layout.row#permission-description",
       "check-permission#representative-area",
       "flex-layout.row#sales-channel-banner",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
-      // Deprecated
-      // "flex-layout.row#shopByBrand",
-      // "flex-layout.row#bannerReleases",
       "flex-layout.row#trending",
       "flex-layout.row#full-banner-desktop1",
-      // "flex-layout.row#shelf1",
       "flex-layout.row#popular",
       "__fold__",
-      // "flex-layout.row#recommendations",
       "flex-layout.row#bannerCoupon",
       "flex-layout.row#imageBanners",
-      // "flex-layout.row#benefits",
       "__fold__",
       "flex-layout.row#newsletter"
     ]
   },
-
   "flex-layout.row#sales-channel-banner": {
     "title": "Sales Channel Banners",
     "props": {
       "blockClass": "full-banner",
       "fullWidth": true
-      // "marginBottom": 8
     },
     "children": ["flex-layout.col#sales-channel-banner"]
   },
@@ -49,7 +35,6 @@
     "children": ["slider-layout#sales-channel-banner"],
     "props": {
       "height": 480,
-      // "heightMobile": 125,
       "autoplay": 8000,
       "images": [
         {
@@ -103,42 +88,6 @@
       "showNavigationArrows": "always"
     }
   },
-
-  "flex-layout.row#imageList--mobile": {
-    "props": {
-      "blockClass": ["full-banner", "full-banner--mobile"],
-      "fullWidth": true
-    },
-    "children": ["list-context.image-list#homeBanners"]
-  },
-  "list-context.image-list#homeBanners": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 480,
-      "images": [
-        {
-          "width": "1440px",
-          "image": "assets/banners/hero-1.png",
-          "mobileImage": "assets/banners/hero-1.png",
-          "description": "Moda Verão - Nova Coleção",
-          "link": {
-            "url": "/shirts"
-          }
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly"
-    }
-  },
   "flex-layout.row#shopByCategory": {
     "title": "Shop by Categories",
     "props": {
@@ -150,11 +99,7 @@
     "props": {
       "blockClass": "shopByCategory"
     },
-    "children": [
-      "rich-text#shopByTitle",
-      "flex-layout.row#shop-by-categories" //,
-      // "flex-layout.row#categories"
-    ]
+    "children": ["rich-text#shopByTitle", "flex-layout.row#shop-by-categories"]
   },
   "rich-text#shopByTitle": {
     "props": {
@@ -180,23 +125,6 @@
       "link#category-6"
     ]
   },
-  // "flex-layout.row#categories": {
-  //   "props": {
-  //     "blockClass": "shopByCategory",
-  //     "horizontalAlign": "center",
-  //     "colSizing": "auto",
-  //     "preventVerticalStretch": true,
-  //     "fullWidth": true
-  //   },
-  //   "children": [
-  //     "link#shoBy1",
-  //     "link#shoBy2",
-  //     "link#shoBy3",
-  //     "link#shoBy4",
-  //     "link#shoBy5",
-  //     "link#shoBy6"
-  //   ]
-  // },
   /* Seus Últimos Pedidos */
   "flex-layout.row#last-orders": {
     "props": {
@@ -212,7 +140,6 @@
       "rich-text#last-orders-title",
       "responsive-layout.desktop#b2b-last-orders",
       "responsive-layout.mobile#b2b-last-orders"
-      // "flex-layout.row#last-orders-cards"
     ]
   },
   "rich-text#last-orders-title": {
@@ -222,24 +149,12 @@
       "blockClass": "shopByCategoryTitle"
     }
   },
-  // "flex-layout.row#last-orders-cards": {
-  //   "props": {
-  //     "horizontalAlign": "center",
-  //     "verticalAlign": "center",
-  //     "preventVerticalStretch": true,
-  //     "fullWidth": true
-  //   },
-  //   "children": ["b2b-last-orders"]
-  // },
-
   "responsive-layout.desktop#b2b-last-orders": {
     "children": ["flex-layout.row#last-orders-cards-desktop"]
   },
-
   "responsive-layout.mobile#b2b-last-orders": {
     "children": ["flex-layout.row#last-orders-cards-mobile"]
   },
-
   "flex-layout.row#last-orders-cards-desktop": {
     "props": {
       "horizontalAlign": "center",
@@ -249,7 +164,6 @@
     },
     "children": ["b2b-last-orders#desktop"]
   },
-
   "flex-layout.row#last-orders-cards-mobile": {
     "props": {
       "horizontalAlign": "center",
@@ -259,7 +173,6 @@
     },
     "children": ["b2b-last-orders#mobile"]
   },
-
   "b2b-last-orders#desktop": {
     "title": "B2B Last Ordes - Desktop",
     "props": {
@@ -267,7 +180,6 @@
       "orderDetailsPlacement": "right"
     }
   },
-
   "b2b-last-orders#mobile": {
     "title": "B2B Last Ordes - Mobile",
     "props": {
@@ -275,21 +187,18 @@
       "orderDetailsPlacement": "top"
     }
   },
-
   "flex-layout.row#representative-area": {
     "props": {
       "blockClass": "representative-area"
     },
     "children": ["flex-layout.col#representative-area"]
   },
-
   "flex-layout.col#representative-area": {
     "props": {
       "blockClass": "representative-area"
     },
     "children": ["b2b-representative-area"]
   },
-
   "b2b-representative-area": {
     "props": {
       "individualGoal": 0,
@@ -298,7 +207,6 @@
       "customersOrdersMonth": 0
     }
   },
-
   /* New categories section */
   "link#category-1": {
     "children": ["image#category-1"],
@@ -310,7 +218,7 @@
   },
   "image#category-1": {
     "props": {
-      "src": "assets/categories/drills.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3f59575c-3072-4b4c-9ad7-b9658d0d4ce3___44812bfac3f8a71912b8422ff45db087.png"
     }
   },
   "link#category-2": {
@@ -323,7 +231,7 @@
   },
   "image#category-2": {
     "props": {
-      "src": "assets/categories/handtools.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/9aef158b-a49b-40b9-b41c-a2fd98b04b54___a1775255135e4c5ccd71bc1078260c9a.png"
     }
   },
   "link#category-3": {
@@ -336,7 +244,7 @@
   },
   "image#category-3": {
     "props": {
-      "src": "assets/categories/kits.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/fc01e96d-e505-43ff-8a10-e2f981e58251___bda3fcb3d613789a9aea874f70967b9f.png"
     }
   },
   "link#category-4": {
@@ -349,7 +257,7 @@
   },
   "image#category-4": {
     "props": {
-      "src": "assets/categories/sanders.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3e00d61f-9f9e-4d2b-95fb-843926f3a8c9___dffe40e4239bc13be7511307d7c063ec.png"
     }
   },
   "link#category-5": {
@@ -362,7 +270,7 @@
   },
   "image#category-5": {
     "props": {
-      "src": "assets/categories/saws.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5a364118-2398-4deb-8299-6c96d4c077df___9dff7ad18512fcf377aa0d5fff4cbb70.png"
     }
   },
   "link#category-6": {
@@ -375,10 +283,9 @@
   },
   "image#category-6": {
     "props": {
-      "src": "assets/categories/measuringtools.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3058a12e-739f-47a2-b24a-a82f0c7015c9___ffb6802bf62a6bbe8a4748828796d714.png"
     }
   },
-
   "flex-layout.row#full-banner-desktop1": {
     "children": ["image#full-banner-desktop1"],
     "props": {
@@ -400,141 +307,6 @@
     },
     "title": "Full Banner 1 - Imagem"
   },
-
-  /**/
-  // "link#shoBy1": {
-  //   "children": ["image#shoBy1", "rich-text#cat1"],
-  //   "props": {
-  //     "href": "/feminino",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "link#shoBy2": {
-  //   "children": ["image#shoBy2", "rich-text#cat2"],
-  //   "props": {
-  //     "href": "/masculino",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "link#shoBy3": {
-  //   "children": ["image#shoBy3", "rich-text#cat3"],
-  //   "props": {
-  //     "href": "/calcados",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "link#shoBy4": {
-  //   "children": ["image#shoBy4", "rich-text#cat4"],
-  //   "props": {
-  //     "href": "/infantil",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "link#shoBy5": {
-  //   "children": ["image#shoBy5", "rich-text#cat5"],
-  //   "props": {
-  //     "href": "/accessories",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "link#shoBy6": {
-  //   "children": ["image#shoBy6", "rich-text#cat6"],
-  //   "props": {
-  //     "href": "/brands",
-  //     "blockClass": "shopByLink"
-  //   }
-  // },
-  // "image#shoBy1": {
-  //   "props": {
-  //     "src": "assets/icons/category-female.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "image#shoBy2": {
-  //   "props": {
-  //     "src": "assets/icons/category-male.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "image#shoBy3": {
-  //   "props": {
-  //     "src": "assets/icons/category-shoes.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "image#shoBy4": {
-  //   "props": {
-  //     "src": "assets/icons/category-childish.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "image#shoBy5": {
-  //   "props": {
-  //     "src": "assets/icons/category-accessories.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "image#shoBy6": {
-  //   "props": {
-  //     "src": "assets/icons/category-brands.svg",
-  //     "blockClass": "shoByImage"
-  //   }
-  // },
-  // "rich-text#cat1": {
-  //   "props": {
-  //     "text": "Women",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-  // "rich-text#cat2": {
-  //   "props": {
-  //     "text": "Men",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-  // "rich-text#cat3": {
-  //   "props": {
-  //     "text": "Footwear",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-  // "rich-text#cat4": {
-  //   "props": {
-  //     "text": "Children",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-  // "rich-text#cat5": {
-  //   "props": {
-  //     "text": "Accessories",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-  // "rich-text#cat6": {
-  //   "props": {
-  //     "text": "Brands",
-  //     "blockClass": "shopByCategory"
-  //   }
-  // },
-
-  "slider-layout#productsMobile": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 1
-      },
-      "centerMode": {
-        "desktop": "to-the-left",
-        "tablet": "to-the-left",
-        "phone": "disabled"
-      },
-      "infinite": false,
-      "fullWidth": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "shelfStyle1"
-    }
-  },
   "flex-layout.row#imageBanners": {
     "title": "3 Columns Image Banners",
     "props": {
@@ -551,34 +323,19 @@
     "props": {
       "preventVerticalStretch": true
     },
-    "children": [
-      "image#banner-1" /* ,
-      "rich-text#bannerTitle",
-      "rich-text#bannerDesc",
-      "rich-text#bannerLink" */
-    ]
+    "children": ["image#banner-1"]
   },
   "flex-layout.col#banner2": {
     "props": {
       "preventVerticalStretch": true
     },
-    "children": [
-      "image#banner-2" /* ,
-      "rich-text#bannerTitle",
-      "rich-text#bannerDesc",
-      "rich-text#bannerLink" */
-    ]
+    "children": ["image#banner-2"]
   },
   "flex-layout.col#banner3": {
     "props": {
       "preventVerticalStretch": true
     },
-    "children": [
-      "image#banner-3" /* ,
-      "rich-text#bannerTitle",
-      "rich-text#bannerDesc",
-      "rich-text#bannerLink" */
-    ]
+    "children": ["image#banner-3"]
   },
   "image#banner-1": {
     "props": {
@@ -608,75 +365,6 @@
       "link": {
         "url": "#"
       }
-    }
-  },
-  // "rich-text#bannerTitle": {
-  //   "props": {
-  //     "text": "#### Keep cool with trusted air conditioning brands",
-  //     "blockClass": "bannerTitle",
-  //     "textAlignment": "CENTER"
-  //   }
-  // },
-  // "rich-text#bannerDesc": {
-  //   "props": {
-  //     "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-  //     "blockClass": "bannerDesc",
-  //     "textAlignment": "CENTER"
-  //   }
-  // },
-  // "rich-text#bannerLink": {
-  //   "props": {
-  //     "text": "[BUY AIR CONDITIONING]()",
-  //     "blockClass": "bannerLink",
-  //     "textAlignment": "CENTER"
-  //   }
-  // },
-  "flex-layout.row#bannerReleases": {
-    "props": {
-      "blockClass": "full-banner",
-      "fullWidth": true
-    },
-    "children": ["list-context.image-list#bannerReleases"]
-  },
-  "list-context.image-list#bannerReleases": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 480,
-      "images": [
-        {
-          "width": "1440px",
-          "image": "assets/banners/new-arrivals.png",
-          "mobileImage": "assets/banners/new-arrivals.png",
-          "description": "Novidades da semana",
-          "link": {
-            "url": "/releases"
-          }
-        }
-      ]
-    }
-  },
-  "flex-layout.row#bannerHero2": {
-    "props": {
-      "blockClass": "full-banner",
-      "fullWidth": true
-    },
-    "children": ["list-context.image-list#bannerHero2"]
-  },
-  "list-context.image-list#bannerHero2": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 480,
-      "images": [
-        {
-          "width": "1440px",
-          "image": "assets/banners/hero-2.png",
-          "mobileImage": "assets/banners/hero-2.png",
-          "description": "Basic is the new Basic",
-          "link": {
-            "url": "/pure"
-          }
-        }
-      ]
     }
   },
   "flex-layout.row#bannerCoupon": {
