@@ -531,6 +531,10 @@ body.v-custom-step-payment .arrow.after-shipping {
   border: none;
 }
 
+.checkEmailAuthConflict__modal {
+  display: none !important;
+}
+
 @media (max-width: 690px) {
   body:not(.body-cart) .main-header .logo svg,
   body:not(.body-cart) .main-header .logo img,
