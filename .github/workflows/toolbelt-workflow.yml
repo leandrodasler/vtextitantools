@@ -33,3 +33,6 @@ jobs:
 
       - name: Install App
         run: vtex install
+
+      - name: List Installed Apps
+        run: vtex ls
