@@ -1,4 +1,4 @@
-name: [QE] Deploy Toolbelt
+name: Deploy Toolbelt
 
 on:
   push:
