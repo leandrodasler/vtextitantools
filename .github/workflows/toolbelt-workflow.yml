@@ -21,7 +21,7 @@ jobs:
           appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
 
       - name: Show directory files
-        run: ls
+        run: cat yarn.lock
 
       - name: Release App
         run: vtex release patch stable
