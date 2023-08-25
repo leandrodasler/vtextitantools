@@ -26,9 +26,10 @@ jobs:
           version: 3.0.0-beta-ci.3  # defaults to 3.0.0-beta-ci.3
 
       - name: Do something after the login
-        # The call name bellow must be the same given as *with: bin*
         run: vtex workspace ls
 
+      - name: List installed apps
+        run: vtex ls
+
       - name: Logout
-        # The call name bellow must be the same given as *with: bin*
         run: vtex logout
