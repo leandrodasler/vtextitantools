@@ -20,6 +20,9 @@ jobs:
           appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
           appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
 
+      - name: Show directory files
+        run: ls
+
       - name: Release App
         run: vtex release patch stable
 
