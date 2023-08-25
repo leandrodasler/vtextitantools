@@ -20,8 +20,8 @@ jobs:
           appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
           appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
 
-      - name: Show directory files
-        run: cat yarn.lock
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Release App
         run: vtex release patch stable
