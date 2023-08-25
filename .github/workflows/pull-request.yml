@@ -2,7 +2,7 @@ name: PR actions
 'on':
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   danger-ci:
     name: Danger CI
