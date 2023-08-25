@@ -1,4 +1,4 @@
-name: Deploy Toolbelt
+name: Release and Install App
 
 on:
   push:
@@ -9,27 +9,19 @@ on:
 
 jobs:
   deploy:
-    name: Toolbelt deploy and login
+    name: Release and Install App
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 10
     steps:
-      - name: Deploy toolbelt and login
+      - name: Authenticate
         uses: vtex/action-toolbelt@v8
         with:
           account: vtextitantools
           appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
           appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
-          authenticate: true        # defaults to true, but it'll be false if
-                                    # any of account, appKey or appToken is missing
-          workspace: master         # defaults to master
-          bin: vtex                 # defaults to vtex
-          version: 3.0.0-beta-ci.3  # defaults to 3.0.0-beta-ci.3
 
-      - name: Do something after the login
-        run: vtex workspace ls
+      - name: Release App
+        run: vtex release patch stable
 
-      - name: List installed apps
-        run: vtex ls
-
-      - name: Logout
-        run: vtex logout
+      - name: Install App
+        run: vtex install
