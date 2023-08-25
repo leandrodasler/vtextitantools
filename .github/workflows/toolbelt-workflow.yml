@@ -1,0 +1,34 @@
+name: [QE] Deploy Toolbelt
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Toolbelt deploy and login
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Deploy toolbelt and login
+        uses: vtex/action-toolbelt@v8
+        with:
+          account: vtextitantools
+          appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
+          appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
+          authenticate: true        # defaults to true, but it'll be false if
+                                    # any of account, appKey or appToken is missing
+          workspace: master         # defaults to master
+          bin: vtex                 # defaults to vtex
+          version: 3.0.0-beta-ci.3  # defaults to 3.0.0-beta-ci.3
+
+      - name: Do something after the login
+        # The call name bellow must be the same given as *with: bin*
+        run: vtex workspace ls
+
+      - name: Logout
+        # The call name bellow must be the same given as *with: bin*
+        run: vtex logout
