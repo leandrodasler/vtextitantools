@@ -28,6 +28,7 @@
       "flex-layout.row#shelf-specifications",
       "product-summary-space",
       "check-permission#product-summary-price-list",
+      "check-permission#progressive-discount-table",
       "add-to-list-btn"
       // "modal-trigger#quickview"
     ]
@@ -162,6 +163,42 @@
   },
 
   "allowed-content#product-comparison-block": {
-    "children": ["product-comparison-block.selector"]
+    "children": ["flex-layout.row#comparison-summary"]
+  },
+
+  "flex-layout.row#comparison-summary": {
+    "props": {
+      "blockClass": "comparisonSummary",
+      "paddingTop": 2,
+      "experimentalHideEmptyCols": true
+    },
+    "children": ["product-comparison-block.selector", "progressive-discount-table"]
+  },
+
+  "check-permission#progressive-discount-table": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#progressive-discount-table"]
+  },
+
+  "allowed-content#progressive-discount-table": {
+    "children": ["flex-layout.row#progressive-discount-table"]
+  },
+
+  "flex-layout.row#progressive-discount-table": {
+    "props": {
+      "blockClass": "progressiveDiscountTable",
+      "paddingTop": 1
+    },
+    "children": ["progressive-discount-table"]
   }
 }

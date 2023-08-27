@@ -3,9 +3,7 @@
 }
 
 .productSelectorContainer {
-  opacity: 0;
-  transition: var(--default-transition);
-  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .productSelectorContainer :global(.vtex-checkbox__line-container) {

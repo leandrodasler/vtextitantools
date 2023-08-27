@@ -23,7 +23,7 @@
 }
 
 .container--summaryComplete:hover
-  :global(.vtex-product-comparison-0-x-productSelectorContainer),
+  :global(.vtex-flex-layout-0-x-flexRow--comparisonSummary),
 .container--summaryComplete:hover .buyButtonContainer,
 .container--summaryComplete:hover
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button),

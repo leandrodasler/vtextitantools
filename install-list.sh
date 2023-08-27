@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 vtex install vtex.admin@4.43.1
 vtex install vtex.admin-customers@2.16.5 
 vtex install vtex.admin-home@3.7.2

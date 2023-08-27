@@ -1,3 +1,15 @@
 .container {
   margin: 2rem 0;
 }
+
+.modalContainer {
+  margin: 0;
+  text-align: center;
+  line-height: 0.75rem;
+}
+
+.modalContainer .title {
+  font-size: 0.75rem;
+  color: var(--black-medium);
+  text-decoration: underline;
+}

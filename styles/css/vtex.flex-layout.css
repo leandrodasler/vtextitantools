@@ -515,6 +515,15 @@
   border-top: 0.15rem solid var(--lines-light);
 }
 
+.flexRow--comparisonSummary {
+  opacity: 0;
+  transition: var(--default-transition);
+}
+
+.flexRowContent--comparisonSummary  {
+  align-items: center;
+}
+
 .flexRowContent--location-availability {
   align-items: center;
 }
