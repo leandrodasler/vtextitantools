@@ -174,11 +174,34 @@
       "paddingTop": 3
     }
   },
+
+  "check-permission#filter": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ],
+      "AllowedContent": "filter-navigator.v3",
+      "DisallowedContent": "filter-navigator.v3#not-logged"
+    }
+  },
+
   "flex-layout.col#filter": {
-    "children": ["filter-navigator.v3"],
+    "children": ["check-permission#filter"],
     "props": {
       "blockClass": "filterCol",
       "paddingLeft": 7
+    }
+  },
+
+  "filter-navigator.v3#not-logged": {
+    "props": {
+      "blockClass": "not-logged"
     }
   },
 
@@ -274,7 +297,7 @@
     }
   },
   "flex-layout.col#filterMobile": {
-    "children": ["filter-navigator.v3"],
+    "children": ["check-permission#filter"],
     "props": {
       "blockClass": "filterMobileCol"
     }

@@ -35,9 +35,6 @@
     "children": ["flex-layout.row#results-seller-page"],
     "props": {
       "showFacetQuantity": true,
-      "hiddenFacets": {
-        "priceRange": true
-      },
       "pagination": "show-more",
       "preventRouteChange": true
     }
@@ -55,7 +52,7 @@
     "props": {
       "width": "20%"
     },
-    "children": ["filter-navigator.v3"]
+    "children": ["check-permission#filter"]
   },
   "flex-layout.col#search-seller-page": {
     "props": {

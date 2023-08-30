@@ -264,3 +264,7 @@
 .orderByOptionsContainer {
   z-index: 9;
 }
+
+.filter__container--priceRange.filter__container--not-logged {
+  display: none;
+}
