@@ -13,3 +13,14 @@
   color: var(--black-medium);
   text-decoration: underline;
 }
+
+.modalContainer :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.currentPriceContainer {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--black-dark);
+}

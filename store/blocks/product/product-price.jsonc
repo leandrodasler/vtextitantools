@@ -69,7 +69,7 @@
     }
   },
   "flex-layout.row#price": {
-    "children": ["product-selling-price#desktop"],
+    "children": [/* "product-selling-price#desktop",  */"current-price"],
     "props": {
       "blockClass": ["items-baseline"],
       "colSizing": "auto",
@@ -78,6 +78,11 @@
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
+    }
+  },
+  "current-price": {
+    "props": {
+      "LoadingContent": "product-selling-price#desktop"
     }
   },
   "product-selling-price#desktop": {
