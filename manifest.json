@@ -85,7 +85,7 @@
     "vtex.category-menu": "2.x",
     "vtex.overlay-layout": "0.x",
     "vtex.storefront-permissions-ui": "1.x",
-    "ssesandbox04.progressive-discount-table": "1.x"
+    "ssesandbox04.progressive-discount-table": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
