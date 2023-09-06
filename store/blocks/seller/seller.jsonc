@@ -1,14 +1,18 @@
 {
   "store.seller": {
     "children": [
+      "flex-layout.row#demo-warning",
       "flex-layout.row#seller-info",
       "flex-layout.row#seller-banner",
       "flex-layout.row#seller-products"
     ]
   },
+  "flex-layout.row#demo-warning": {
+    "children": ["demo-warning"]
+  },
   "flex-layout.row#seller-info": {
     "props": {
-      "paddingTop": 6
+      "paddingTop": 2
     },
     "children": ["seller-info"]
   },
