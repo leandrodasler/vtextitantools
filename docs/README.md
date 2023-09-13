@@ -30,10 +30,13 @@ bash ./install-list.sh
 
 After following the steps above, you are ready to install **Titan Tools Store Theme**. You must:
 
-1. Run the `vtex install vtextitantools.b2bstore@4.x `command on the CLI.
+1. Run the `vtex install vtextitantools.b2bstore@4.x` command on the CLI.
 2. Run the `vtex browse` command to see the B2B Store Theme on your browser.
 
 ## Customization
 
 After installing **Titan Tools Store Theme**, you can customize it according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
 
+## Release and Install
+
+This repository has a [GitHub Actions workflow](../.github/workflows/toolbelt-workflow.yml) that releases and installs this theme in `vtextitantools` account on push at "main" or "master" branch.

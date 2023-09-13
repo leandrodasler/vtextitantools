@@ -9,9 +9,6 @@
     "store": "0.x",
     "checkout-ui-custom": "0.x"
   },
-  "scripts": {
-    "postreleasy": "vtex publish --verbose"
-  },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
     "vtex.reviews-and-ratings": "3.x",

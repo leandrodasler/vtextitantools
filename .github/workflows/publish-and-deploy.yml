@@ -1,0 +1,29 @@
+name: Publish and Deploy App
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Publish and Deploy App
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Authenticate
+        uses: vtex/action-toolbelt@v8
+        with:
+          account: vtextitantools
+          appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
+          appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Publish App
+        run: vtex publish --force
+
+      - name: Deploy App
+        run: vtex deploy --force --yes
