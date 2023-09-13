@@ -1,4 +1,4 @@
-[![Release and Install App](https://github.com/tiago-freire/vtextitantools/actions/workflows/toolbelt-workflow.yml/badge.svg)](https://github.com/tiago-freire/vtextitantools/actions/workflows/toolbelt-workflow.yml)
+[![Publish, Deploy and Install App](https://github.com/tiago-freire/vtextitantools/actions/workflows/publish-deploy-and-install.yml/badge.svg)](https://github.com/tiago-freire/vtextitantools/actions/workflows/publish-deploy-and-install.yml)
 
 # Titan Tools Store Theme
 
@@ -37,6 +37,6 @@ After following the steps above, you are ready to install **Titan Tools Store Th
 
 After installing **Titan Tools Store Theme**, you can customize it according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
 
-## Release and Install
+## CI
 
-This repository has a [GitHub Actions workflow](../.github/workflows/toolbelt-workflow.yml) that releases and installs this theme in `vtextitantools` account on push at "main" or "master" branch.
+This repository has a [GitHub Actions workflow](../.github/workflows/publish-deploy-and-install.yml) that publishes, deploys and installs this theme in `vtextitantools` account on push release tag after a `vtex release {patch|minor|major} stable` command runs.

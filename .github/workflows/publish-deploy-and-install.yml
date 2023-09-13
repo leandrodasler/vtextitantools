@@ -1,14 +1,14 @@
-name: Publish and Deploy App
+name: Publish, Deploy and Install App
 
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - "v[0-9]+.[0-9]+.[0-9]+"
   workflow_dispatch:
 
 jobs:
   deploy:
-    name: Publish and Deploy App
+    name: Publish, Deploy and Install App
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -27,3 +27,6 @@ jobs:
 
       - name: Deploy App
         run: vtex deploy --force --yes
+
+      - name: Install App
+        run: vtex install
