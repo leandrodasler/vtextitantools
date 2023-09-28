@@ -26,6 +26,8 @@ Clone this repository, enter its directory in terminal and run:
 bash ./install-list.sh 
 ```
 
+Some applications must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
+
 ## Installation
 
 After following the steps above, you are ready to install **Titan Tools Store Theme**. You must:
