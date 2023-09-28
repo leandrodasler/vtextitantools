@@ -12,7 +12,7 @@
   },
   "flex-layout.row#seller-info": {
     "props": {
-      "paddingTop": 6
+      "paddingTop": 2
     },
     "children": ["seller-info"]
   },
