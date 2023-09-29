@@ -28,17 +28,18 @@ bash ./install-list.sh
 
 Some applications must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
 
-## Installation
+## How to use
 
-After following the steps above, you are ready to install **Titan Tools Store Theme**. You must:
+After following the steps above, you are ready to use **Titan Tools Store Theme**. You must:
 
-1. Run the `vtex install vtextitantools.b2bstore@4.x` command on the CLI.
-2. Run the `vtex browse` command to see the B2B Store Theme on your browser.
+1. Replace `vendor` on `manifest.json` for your account name
+2. Run the `vtex link` command on the CLI.
+3. Run the `vtex browse` command to see the store using Titan Tools Store Theme on your browser.
 
 ## Customization
 
-After installing **Titan Tools Store Theme**, you can customize it according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
+You can customize Titan Tools Store Theme according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
 
 ## CI
 
-This repository has a [GitHub Actions workflow](../.github/workflows/publish-deploy-and-install.yml) that publishes, deploys and installs this theme in `vtextitantools` account on push release tag after a `vtex release {patch|minor|major} stable` command runs.
+This repository has a [GitHub Actions workflow](../.github/workflows/publish-deploy-and-install.yml) that publishes, deploys and installs this theme to the account indicated in the manifest.json vendor on push release tag after a `vtex release {patch|minor|major} stable` command runs.
