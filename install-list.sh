@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+vtex install vtex.reviews-and-ratings@3.x
 vtex install vtex.admin@4.x
 vtex install vtex.admin-customers@2.x
 vtex install vtex.admin-home@3.x
@@ -13,7 +14,6 @@ vtex install vtex.my-account@1.x
 vtex install vtex.quickorder@3.x
 vtex install vtex.storefront-permissions-ui@1.x
 vtex install vtex.wish-list@1.x
-vtex install vtex.reviews-and-ratings@2.x
 vtex install vtex.location-availability@0.x
 vtex install vtex.shopper-location@0.x
 vtex install vtex.wordpress-integration@2.x
