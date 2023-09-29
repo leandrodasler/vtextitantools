@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- New threekit peer dependency
+
 ## [4.0.20] - 2023-09-28
 
 ## [4.0.19] - 2023-09-28
@@ -93,7 +97,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.0.19] - 2022-11-17
 
-## Changed
+### Changed
 
 - Rollback switch organizations because of b2b-user-widget update.
 

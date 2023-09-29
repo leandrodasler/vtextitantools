@@ -28,6 +28,6 @@ vtex install vtex.pagespeed-graphql@0.x
 vtex install vtex.social-selling@0.x
 vtex install vtex.storefront-permissions@1.x
 vtex install vtex.telemarketing@2.x
-vtex install vtextitantools.threekit-app@1.x
+vtex install ssesandbox04.threekit-app@0.x
 vtex install ssesandbox04.seller-page@0.x
 vtex install ssesandbox04.b2b-suite-bra@1.x

@@ -16,7 +16,7 @@
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
     "vtex.wordpress-integration": "2.x",
-    "vtextitantools.threekit-app": "1.x",
+    "ssesandbox04.threekit-app": "0.x",
     "ssesandbox04.seller-page": "0.x",
     "ssesandbox04.b2b-suite-bra": "1.x"
   },
