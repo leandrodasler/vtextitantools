@@ -4,10 +4,9 @@
 
 ![Titan Tools Store Theme](https://vtextitantools.vtexassets.com/arquivos/orange-titantools-logo.svg)
 
+**Titan Tools Store Theme** is a front-end template to help your store get started with VTEX’s core features for businesses selling to other businesses.
 
 # Installing the Titan Tools Store Theme
-
-**Titan Tools Store Theme** is a front-end template to help your store get started with VTEX’s core features for businesses selling to other businesses.
 
 ## Prerequisites
 
