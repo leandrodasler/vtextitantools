@@ -43,7 +43,7 @@ You can customize Titan Tools Store Theme according to your store’s business n
 
 This repository has a [GitHub Actions workflow](../.github/workflows/publish-deploy-and-install.yml) that publishes, deploys and installs this theme to the account indicated in the manifest.json vendor on push release tag after a `vtex release {patch|minor|major} stable` command runs.
 
-For workflow to work, it's necessary to create an [application key](https://help.vtex.com/pt/tutorial/chaves-de-aplicacao--2iffYzlvvz4BDMr6WGUtet) for your account.
+For workflow to work, it's necessary to create an [application key](https://help.vtex.com/pt/tutorial/chaves-de-aplicacao--2iffYzlvvz4BDMr6WGUtet) with publish, install and deploy app permissions for your account.
 
 Then, create the following secrets in your [Github repository secrets](https://docs.github.com/pt/actions/security-guides/using-secrets-in-github-actions) with respectively values of created application key and token:
 
