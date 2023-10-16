@@ -24,3 +24,8 @@
   line-height: 32px;
   color: var(--black-dark);
 }
+
+:global(.vtex-flex-layout-0-x-flexRow--product-price-and-location-availability)
+  .currentPriceContainer {
+  font-size: 2.5rem;
+}

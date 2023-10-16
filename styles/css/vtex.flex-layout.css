@@ -491,9 +491,9 @@
   padding: 0 1rem !important;
 }
 
-.flexCol--right-col {
+/* .flexCol--right-col {
   width: 416px;
-}
+} */
 
 .flexRowContent--items-baseline {
   align-items: baseline;

@@ -39,7 +39,7 @@ After following the steps above, you are ready to use **Titan Tools Store Theme*
 
 You can customize Titan Tools Store Theme according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
 
-## Continuous Integration
+## Continuous Delivery
 
 This repository has a [GitHub Actions workflow](../.github/workflows/publish-deploy-and-install.yml) that publishes, deploys and installs this theme to the account indicated in the manifest.json vendor on push release tag after a `vtex release {patch|minor|major} stable` command runs.
 

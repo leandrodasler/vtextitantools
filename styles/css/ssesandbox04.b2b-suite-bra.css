@@ -9,12 +9,14 @@
 
 .skuContentWrapper:first-child {
   margin-top: -0.5rem;
+  padding: 0 1rem 0.5rem;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .skuContentWrapper:last-child {
   margin-bottom: -0.5rem;
+  padding: 0.5rem 1rem;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
@@ -51,6 +53,16 @@
   font-size: 1rem;
   text-align: center;
   margin: 0;
+}
+
+.priceByQuantityTable {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.priceByQuantityHeader,
+.priceByQuantityValue {
+  font-size: 0.85rem;
 }
 
 /* b2b-last-orders */

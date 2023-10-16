@@ -9,19 +9,44 @@
         "customer-admin",
         "customer-approver",
         "customer-buyer"
-      ]
-    },
-    "blocks": [
-      "allowed-content#sku-list" /* ,
-      "disallowed-content#product-price" */
-    ]
+      ],
+      "AllowedContent": "flex-layout.row#sku-list"
+    }
   },
-  "allowed-content#sku-list": {
-    "children": ["flex-layout.row#sku-list"]
+  "check-permission#sku-list-single": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ],
+      "AllowedContent": "flex-layout.row#sku-list-single"
+    }
+  },
+  "flex-layout.row#sku-list-single": {
+    "children": ["flex-layout.col#sku-list-single"],
+    "props": {
+      "marginTop": 6
+    }
+  },
+  "flex-layout.col#sku-list-single": {
+    "children": [
+      "responsive-layout.desktop#sku-list-price-by-quantity",
+      "sku-list#price-by-quantity",
+      "flex-layout.row#add-all-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "sku-list"
+    }
   },
   "flex-layout.row#sku-list": {
     "children": ["flex-layout.col#sku-list"],
     "props": {
+      "marginTop": 5,
       "marginBottom": 5
     }
   },
@@ -42,6 +67,10 @@
     "children": ["flex-layout.row#sku-list-header"]
   },
 
+  "responsive-layout.desktop#sku-list-price-by-quantity": {
+    "children": ["flex-layout.row#sku-list-header-price-by-quantity"]
+  },
+
   "flex-layout.row#sku-list-header": {
     "props": {
       "preventHorizontalStretch": false,
@@ -49,14 +78,33 @@
       "marginBottom": 3,
       "horizontalAlign": "center"
     },
-    "children": ["rich-text#specifications", "rich-text#qty"]
+    "children": ["rich-text#specifications", "rich-text#inventory", "rich-text#qty"]
+  },
+
+  "flex-layout.row#sku-list-header-price-by-quantity": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "skuListHeader",
+      "marginBottom": 3,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#specifications", "rich-text#price-by-quantity", "rich-text#inventory", "rich-text#qty-price-by-quantity"/* , "flex-layout.col#spacer-buy-button" */]
   },
 
   "rich-text#specifications": {
     "props": {
       "text": "**Product Info**",
       "blockClass": "skuList",
-      "width": "50%",
+      // "width": "50%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#price-by-quantity": {
+    "props": {
+      // "width": "50%",
+      "text": "**Price by Quantity**",
+      "blockClass": "skuList",
       "textPosition": "CENTER"
     }
   },
@@ -65,13 +113,41 @@
     "props": {
       "text": "**Quantity**",
       "blockClass": "skuList",
-      "width": "50%",
+      "width": "25%",
       "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#qty-price-by-quantity": {
+    "props": {
+      "text": "**Quantity**",
+      "blockClass": "skuList",
+      "width": "15%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#inventory": {
+    "props": {
+      "text": "**Stock**",
+      "blockClass": "skuList",
+      "width": "10%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.col#spacer-buy-button": {
+    "props": {
+      "width": "15%"
     }
   },
 
   "sku-list": {
     "blocks": ["sku-content.desktop", "sku-content.mobile"]
+  },
+
+  "sku-list#price-by-quantity": {
+    "blocks": ["sku-content.desktop#price-by-quantity"]
   },
 
   "flex-layout.row#add-all-to-cart-button": {
@@ -85,6 +161,10 @@
     "children": ["flex-layout.row#item-main-desktop"]
   },
 
+  "sku-content.desktop#price-by-quantity": {
+    "children": ["flex-layout.row#item-price-by-quantity"]
+  },
+
   "flex-layout.row#item-main-desktop": {
     "props": {
       "preventHorizontalStretch": false,
@@ -92,17 +172,38 @@
     },
     "children": [
       "flex-layout.col#sku-highlight-size",
-      "flex-layout.col#sku-quantity-selector" /* ,
+      "flex-layout.col#sku-inventory",
+      "flex-layout.col#sku-quantity-selector"
+    ]
+  },
+
+  "flex-layout.row#item-price-by-quantity": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#sku-highlight-size",
+      "flex-layout.col#price-by-quantity",
+      "flex-layout.col#sku-inventory",
+      "flex-layout.col#sku-quantity-selector-price-by-quantity"/* ,
       "flex-layout.col#sku-buy-button" */
     ]
   },
 
   "flex-layout.col#sku-highlight-size": {
     "props": {
-      "width": "50%",
+      // "width": "50%",
       "verticalAlign": "middle"
     },
-    "children": [/* "sku-highlights#size",  */"sku-name"]
+    "children": ["sku-name"]
+  },
+
+  "flex-layout.col#price-by-quantity": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-price-by-quantity"]
   },
 
   "sku-highlights#size": {
@@ -112,25 +213,50 @@
         "highlight": "admin/editor.sku-list.highlights.allSpecifications"
         // "typeSpecifications": "Drill Bit Size"
       },
-      "showLabel": true
+      "showLabel": false
     }
   },
 
   "flex-layout.col#sku-quantity-selector": {
     "props": {
-      "width": "50%",
+      "width": "25%",
       "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
     "children": ["sku-quantity-selector"]
   },
 
-  // "flex-layout.col#sku-buy-button": {
-  //   "props": {
-  //     "verticalAlign": "middle"
-  //   },
-  //   "children": ["sku-buy-button"]
-  // },
+  "flex-layout.col#sku-quantity-selector-price-by-quantity": {
+    "props": {
+      "width": "15%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-quantity-selector"]
+  },
+
+  "flex-layout.col#sku-inventory": {
+    "props": {
+      "width": "10%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-inventory"]
+  },
+
+  "sku-inventory": {
+    "props": {
+      "showLabel": false
+    }
+  },
+
+  "flex-layout.col#sku-buy-button": {
+    "props": {
+      "width": "15%",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-buy-button"]
+  },
 
   "sku-content.mobile": {
     "children": ["flex-layout.row#item-main-mobile"]
@@ -144,7 +270,8 @@
     },
     "children": [
       "flex-layout.col#sku-highlight-size-mobile",
-      "flex-layout.col#sku-quantity-selector-mobile" /* ,
+      "flex-layout.col#sku-quantity-selector-mobile",
+      "flex-layout.col#sku-inventory-mobile" /* ,
       "flex-layout.col#sku-buy-button" */
     ]
   },
@@ -170,10 +297,24 @@
 
   "flex-layout.col#sku-quantity-selector-mobile": {
     "props": {
-      "width": "50%",
+      // "width": "50%",
       "verticalAlign": "middle"
     },
     "children": ["sku-quantity-selector"]
+  },
+
+  "flex-layout.col#sku-inventory-mobile": {
+    "props": {
+      // "width": "50%",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-inventory#mobile"]
+  },
+
+  "sku-inventory#mobile": {
+    "props": {
+      "showLabel": true
+    }
   },
 
   "sku-quantity-selector": {

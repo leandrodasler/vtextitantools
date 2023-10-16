@@ -29,10 +29,10 @@
       "flex-layout.row#product-identifier",
       "seller-page-link",
       "flex-layout.row#product-images",
+      "flex-layout.row#box",
+      "flex-layout.row#divider",
       "check-permission#sku-list",
       "flex-layout.row#assembly-options",
-      "flex-layout.row#divider",
-      "flex-layout.row#box",
       "product-kit#buy-together",
       "flex-layout.row#description-and-gallery",
       "flex-layout.row#specification",
@@ -63,7 +63,7 @@
         }
       ],
       "Then": "flex-layout.row#threekit-and-add-to-cart-button",
-      "Else": "flex-layout.row#main"
+      "Else": "benefits-condition#product-main"
     }
   },
   "flex-layout.row#threekit-and-add-to-cart-button": {
