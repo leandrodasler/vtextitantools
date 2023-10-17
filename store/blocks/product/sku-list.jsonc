@@ -103,7 +103,7 @@
   "rich-text#price-by-quantity": {
     "props": {
       // "width": "50%",
-      "text": "**Price by Quantity**",
+      "text": "**Unit Price x Quantity**",
       "blockClass": "skuList",
       "textPosition": "CENTER"
     }
