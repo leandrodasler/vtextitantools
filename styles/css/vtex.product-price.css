@@ -5,6 +5,11 @@
   color: var(--black-dark);
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--product-price-and-location-availability)
+  .sellingPrice--desktop {
+  font-size: 2.5rem;
+}
+
 .sellingPrice .sellingPriceValue--desktop {
   display: none;
 }

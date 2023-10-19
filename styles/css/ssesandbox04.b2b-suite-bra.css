@@ -9,16 +9,22 @@
 
 .skuContentWrapper:first-child {
   margin-top: -0.5rem;
-  padding: 0 1rem 0.5rem;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .skuContentWrapper:last-child {
   margin-bottom: -0.5rem;
-  padding: 0.5rem 1rem;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--sku-list):global(
+    .vtex-flex-layout-0-x-flexColChild--single
+  )
+  .skuContentWrapper:first-child
+  .priceByQuantityTable {
+  margin-top: -0.5rem;
 }
 
 .itemHighlight,
