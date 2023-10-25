@@ -1,6 +1,6 @@
 {
   "flex-layout.row#product-details": {
-    "children": ["benefits-condition#product-main"/* "flex-layout.row#main" *//* , "sticky-layout#box" */],
+    "children": ["flex-layout.row#main-with-benefits"],
     "props": {
       "blockClass": "product",
       "colSizing": "auto",

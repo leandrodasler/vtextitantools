@@ -63,7 +63,7 @@
         }
       ],
       "Then": "flex-layout.row#threekit-and-add-to-cart-button",
-      "Else": "benefits-condition#product-main"
+      "Else": "flex-layout.row#main-with-benefits"
     }
   },
   "flex-layout.row#threekit-and-add-to-cart-button": {
@@ -112,6 +112,7 @@
     "children": [
       "flex-layout.row#breadcrumb",
       "condition-layout.product#Threekit",
+      "flex-layout.row#reviews-and-ratings",
       // "flex-layout.row#product-details",
       // "flex-layout.row#main",
       "product-kit#buy-together"//, // This block won't work if it's not a direct children of store.product

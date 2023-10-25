@@ -364,9 +364,12 @@
 /* Product Brand */
 
 .productBrandContainer {
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--fresh-blue);
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  background-color: #abd4fa;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
 }
 
 /* Product Name */
@@ -526,6 +529,10 @@
   font-size: 14px;
   line-height: 1.25;
   color: var(--black-medium);
+}
+
+.productDescriptionText :global(.vtex-store-components-3-x-container) {
+  padding: 0;
 }
 
 .productDescriptionTitle {

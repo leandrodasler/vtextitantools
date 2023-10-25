@@ -84,12 +84,6 @@
     }
   },
 
-  "product-description": {
-    "props": {
-      "collapseContent": false
-    }
-  },
-
   "product-images#gallery--mobile": {
     "props": {
       "blockClass": ["dots-around"],
@@ -123,8 +117,7 @@
 
   "product-description#desktop": {
     "props": {
-      "blockClass": "desktop",
-      "collapseContent": false
+      "blockClass": "desktop"
     }
   },
 

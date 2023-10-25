@@ -83,7 +83,8 @@
     "vtex.overlay-layout": "0.x",
     "vtex.storefront-permissions-ui": "1.x",
     "ssesandbox04.progressive-discount-table": "2.x",
-    "ssesandbox04.demo-warning": "0.x"
+    "ssesandbox04.demo-warning": "0.x",
+    "ssesandbox04.reviews-and-ratings-extensions": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

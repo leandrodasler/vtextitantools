@@ -5,6 +5,12 @@
       "blockClass": "product-price"
     }
   },
+  "flex-layout.row#product-price-box": {
+    "children": ["flex-layout.col#product-price"],
+    "props": {
+      "blockClass": "product-price-box"
+    }
+  },
   "flex-layout.col#product-price": {
     "children": [
       "flex-layout.row#prices-and-discount",

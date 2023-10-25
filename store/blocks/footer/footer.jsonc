@@ -136,7 +136,7 @@
   },
   "image#all-cards": {
     "props": {
-      "src": "assets/banners/credit-cards.png"
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3a82deb2-7ee5-4680-8d7f-332975128f9c___b27d951c5d4b66a1312af1caa1cffced.png"
     }
   },
   "link#facebook": {

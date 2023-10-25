@@ -2,6 +2,7 @@
   "flex-layout.row#reviews-and-ratings": {
     "children": ["flex-layout.col#reviews-and-ratings"],
     "props": {
+      "marginTop": 6,
       "blockClass": "reviews-and-ratings"
     }
   },

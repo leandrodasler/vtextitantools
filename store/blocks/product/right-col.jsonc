@@ -1,12 +1,8 @@
 {
   "flex-layout.col#right-col-with-benefits": {
     "children": [
-      "flex-layout.row#brand-and-rating",
-      "flex-layout.row#product-name",
-      "flex-layout.row#product-identifier",
-      "seller-page-link",
-      "flex-layout.row#box",
-      "check-permission#sku-list-single",
+      "flex-layout.row#right-col-boxes",
+      "benefits-condition#product-main",
       "flex-layout.row#assembly-options"
     ],
     "props": {
@@ -15,11 +11,25 @@
       "width": "60%"
     }
   },
+  "flex-layout.row#right-col-boxes": {
+    "children": [
+      "flex-layout.col#product-name-and-description",
+      "flex-layout.row#box"
+    ]
+  },
+  "benefits-condition#product-main": {
+    "props": {
+      "Then": "check-permission#sku-list-single",
+      "Else": "check-permission#sku-list"
+    }
+  },
   "flex-layout.col#right-col": {
     "children": [
-      "flex-layout.row#brand-and-rating",
-      "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
+      "flex-layout.row#product-name",
+      // "vtex.store-components:product-brand#brand-and-rating",
+      // "average-rating",
+      "flex-layout.row#brand-and-rating",
       "seller-page-link",
       "flex-layout.row#box",
       "check-permission#sku-list",
@@ -31,22 +41,35 @@
       "width": "45%"
     }
   },
+  "flex-layout.col#product-name-and-description": {
+    "children": [
+      "flex-layout.row#product-identifier",
+      "flex-layout.row#product-name",
+      "flex-layout.row#brand-and-rating",
+      "seller-page-link",
+      "product-description",
+      "product-specification-group",
+      "product-specification-group#table"
+    ]
+  },
   "seller-page-link": {
     "children": ["seller-pdp-text"]
   },
   "flex-layout.row#brand-and-rating": {
     "children": [
-      "vtex.store-components:product-brand#brand-and-rating",
+      "average-rating",
+      "vtex.store-components:product-brand#brand-and-rating"/* ,
       "flex-layout.col#spacer",
-      "product-rating-summary"
+      "product-rating-summary" */
     ],
     "props": {
       "blockClass": ["items-center", "brand-and-rating"],
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
+      "colJustify": "left",
       "colSizing": "auto",
-      "colGap": 0
+      "colGap": 3
     }
   },
   "vtex.store-components:product-brand#brand-and-rating": {

@@ -530,7 +530,7 @@
 
 .flexRow--location-availability,
 .flexRow--product-availability-and-quantity {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .flexRowContent--location-availability::before {

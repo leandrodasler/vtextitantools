@@ -4,7 +4,8 @@
       "blockClass": "summaryComplete"
     },
     "children": [
-      "product-rating-inline",
+      "average-rating",
+      // "product-rating-inline",
       "flex-layout.row#stackSavings",
       "product-summary-name",
       "product-summary-space",
@@ -21,7 +22,8 @@
       "blockClass": "summaryComplete"
     },
     "children": [
-      "product-rating-inline",
+      "average-rating",
+      // "product-rating-inline",
       "flex-layout.row#stackSavings",
       "product-summary-name",
       "product-summary-space",
