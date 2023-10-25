@@ -24,9 +24,9 @@
   },
   "flex-layout.col#main-mobile": {
     "children": [
-      "flex-layout.row#brand-and-rating",
-      "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
+      "flex-layout.row#product-name",
+      "flex-layout.row#brand-and-rating",
       "seller-page-link",
       "flex-layout.row#product-images",
       "flex-layout.row#box",

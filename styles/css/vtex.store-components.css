@@ -525,10 +525,11 @@
   }
 }
 
-.productDescriptionText {
+.productDescriptionText, .productDescriptionText :local(*) {
   font-size: 14px;
   line-height: 1.25;
   color: var(--black-medium);
+  font-family: Fabriga !important;
 }
 
 .productDescriptionText :global(.vtex-store-components-3-x-container) {

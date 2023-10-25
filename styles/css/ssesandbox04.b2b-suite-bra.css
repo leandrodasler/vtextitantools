@@ -61,6 +61,10 @@
   margin: 0;
 }
 
+.skuName--mobile {
+  font-size: 1.5rem;
+}
+
 .priceByQuantityTable {
   border-spacing: 0;
   border-collapse: collapse;

@@ -42,13 +42,16 @@
     }
   },
   "flex-layout.col#product-name-and-description": {
+    "props": {
+      "blockClass": "product-name-and-description",
+      "verticalAlign": "top"
+    },
     "children": [
       "flex-layout.row#product-identifier",
       "flex-layout.row#product-name",
       "flex-layout.row#brand-and-rating",
       "seller-page-link",
       "product-description",
-      "product-specification-group",
       "product-specification-group#table"
     ]
   },

@@ -59,13 +59,13 @@
   },
   "flex-layout.row#spec-group": {
     "props": {
-      "marginTop": 3,
+      "marginTop": 4,
       "blockClass": "productSpecificationGroup"
     },
     "children": ["flex-layout.col#spec-group"]
   },
   "flex-layout.col#spec-group": {
-    "children": [/* "flex-layout.row#spec-group-name",  */"product-specification"]
+    "children": ["flex-layout.row#spec-group-name", "product-specification"]
   },
   "flex-layout.row#spec-group-name": {
     "props": {
@@ -78,7 +78,12 @@
   },
   "flex-layout.row#spec-item": {
     "props": {
-      "blockClass": "productSpecification"
+      "blockClass": "productSpecification",
+      "border": "bottom",
+      "borderWidth": 1,
+      "borderColor": "muted-3",
+      "paddingTop": 2,
+      "paddingBottom": 2
     },
     "children": ["flex-layout.col#spec-name", "flex-layout.col#spec-value"]
   },
