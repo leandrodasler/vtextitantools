@@ -376,9 +376,9 @@
 
 .productNameContainer--product-page {
   color: var(--serious-black);
-  font-size: 24px;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 2.25rem;
 }
 
 .productNameContainer--minicart {
@@ -526,10 +526,10 @@
 }
 
 .productDescriptionText, .productDescriptionText :local(*) {
-  font-size: 14px;
-  line-height: 1.25;
-  color: var(--black-medium);
   font-family: Fabriga !important;
+  font-size: 14px !important;
+  line-height: 1.25 !important;
+  color: var(--black-medium) !important;
 }
 
 .productDescriptionText :global(.vtex-store-components-3-x-container) {

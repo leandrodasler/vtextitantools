@@ -420,18 +420,6 @@
   display: flex;
 }
 
-.flexRow--brand-and-rating {
-  margin-bottom: 11px;
-}
-
-.flexRow--product-name {
-  margin-bottom: 8px;
-}
-
-.flexRow--product-identifier {
-  margin-bottom: 20px;
-}
-
 .flexCol--reset-text :not(:global(.vtex-fake)),
 .flexRow--reset-text :not(:global(.vtex-fake)) {
   color: inherit;
@@ -499,14 +487,16 @@
   align-items: baseline;
 }
 
-@media (min-width: 64rem) {
-  .flexCol--box {
-    background-color: #fff;
-    border: 1px solid var(--lines-light);
-    border-radius: 4px;
-    padding: 24px;
-    width: 334px;
-  }
+.flexColChild--container-boxes {
+  width: 100%;
+}
+
+.flexCol--product-name-and-description,
+.flexColChild--container-boxes .flexCol--box {
+  border: 1px solid var(--lines-light);
+  border-radius: 4px;
+  padding: 24px;
+  height: auto;
 }
 
 :global(.vtex-product-summary-2-x-container) .flexRow--product-price {
@@ -520,7 +510,7 @@
   transition: var(--default-transition);
 }
 
-.flexRowContent--comparisonSummary  {
+.flexRowContent--comparisonSummary {
   align-items: center;
 }
 
@@ -528,14 +518,15 @@
   align-items: center;
 }
 
-.flexRow--location-availability,
+/* .flexRow--location-availability, */
+.flexCol--location-availability,
 .flexRow--product-availability-and-quantity {
-  margin-top: 1rem;
+  background-color: var(--near-white);
+  margin-top: 2rem;
 }
 
 .flexRowContent--location-availability::before {
-  background-color: #f3f9ff;
-  background-image: url("data:image/svg+xml,%3Csvg width='26' height='22' viewBox='0 0 26 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.3637 1H1V15.4443H17.3637V1Z' stroke='%233c4043' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.3638 6.55566H21.7274L25.0002 9.88896V15.4444H17.3638V6.55566Z' stroke='%233c4043' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.90893 20.9998C7.41516 20.9998 8.63621 19.7562 8.63621 18.2221C8.63621 16.688 7.41516 15.4443 5.90893 15.4443C4.40269 15.4443 3.18164 16.688 3.18164 18.2221C3.18164 19.7562 4.40269 20.9998 5.90893 20.9998Z' stroke='%233c4043' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.0911 20.9998C21.5973 20.9998 22.8183 19.7562 22.8183 18.2221C22.8183 16.688 21.5973 15.4443 20.0911 15.4443C18.5848 15.4443 17.3638 16.688 17.3638 18.2221C17.3638 19.7562 18.5848 20.9998 20.0911 20.9998Z' stroke='%233c4043' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 35 35' fill='none'%3E%3Cpath d='M5.26856 27.1114H3.13428C2.56824 27.1114 2.02537 26.8865 1.62512 26.4863C1.22486 26.086 1 25.5431 1 24.9771V10.0371C1 9.47107 1.22486 8.9282 1.62512 8.52795C2.02537 8.12769 2.56824 7.90283 3.13428 7.90283H24.4771C25.0431 7.90283 25.586 8.12769 25.9863 8.52795C26.3865 8.9282 26.6114 9.47107 26.6114 10.0371V14.3057' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.9 8.47199L21.916 2.45331C21.7279 2.16985 21.4749 1.93543 21.1779 1.7696C20.8808 1.60377 20.5485 1.51134 20.2085 1.5H7.47399C7.1219 1.49987 6.77524 1.58685 6.46492 1.75318C6.15459 1.91951 5.89024 2.16004 5.69542 2.45331L1.71143 8.47199' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.8057 1.5V7.90285' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.7954 31.38H11.6714C11.1053 31.38 10.5625 31.1551 10.1622 30.7549C9.76197 30.3546 9.53711 29.8117 9.53711 29.2457V20.7086C9.53711 20.1425 9.76197 19.5997 10.1622 19.1994C10.5625 18.7991 11.1053 18.5743 11.6714 18.5743H23.0542C23.6203 18.5743 24.1631 18.7991 24.5634 19.1994C24.9636 19.5997 25.1885 20.1425 25.1885 20.7086V28.4916' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.1885 20.7086H29.457C30.5891 20.7086 31.6749 21.1583 32.4754 21.9588C33.2759 22.7593 33.7256 23.845 33.7256 24.9771V29.2457C33.7256 29.8117 33.5007 30.3546 33.1005 30.7548C32.7002 31.1551 32.1574 31.38 31.5913 31.38H29.0444' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23.7656 30.8393C23.7656 31.5449 24.046 32.2217 24.5449 32.7207C25.0439 33.2197 25.7207 33.5 26.4264 33.5C27.132 33.5 27.8088 33.2197 28.3078 32.7207C28.8068 32.2217 29.0871 31.5449 29.0871 30.8393C29.0871 30.1336 28.8068 29.4568 28.3078 28.9578C27.8088 28.4589 27.132 28.1785 26.4264 28.1785C25.7207 28.1785 25.0439 28.4589 24.5449 28.9578C24.046 29.4568 23.7656 30.1336 23.7656 30.8393Z' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.7385 30.8393C12.7385 31.1887 12.8073 31.5347 12.9411 31.8575C13.0748 32.1803 13.2708 32.4736 13.5178 32.7207C13.7649 32.9678 14.0582 33.1638 14.381 33.2975C14.7039 33.4312 15.0499 33.5 15.3993 33.5C15.7487 33.5 16.0947 33.4312 16.4175 33.2975C16.7403 33.1638 17.0336 32.9678 17.2807 32.7207C17.5278 32.4736 17.7237 32.1803 17.8575 31.8575C17.9912 31.5347 18.06 31.1887 18.06 30.8393C18.06 30.4899 17.9912 30.1439 17.8575 29.821C17.7237 29.4982 17.5278 29.2049 17.2807 28.9578C17.0336 28.7108 16.7403 28.5148 16.4175 28.3811C16.0947 28.2474 15.7487 28.1785 15.3993 28.1785C15.0499 28.1785 14.7039 28.2474 14.381 28.3811C14.0582 28.5148 13.7649 28.7108 13.5178 28.9578C13.2708 29.2049 13.0748 29.4982 12.9411 29.821C12.8073 30.1439 12.7385 30.4899 12.7385 30.8393Z' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23.8226 31.3799H18.0173' stroke='%23000711' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -548,8 +539,17 @@
 }
 
 .flexRowContent--skuListHeader {
-  padding: 0 1rem;
+  padding: 0.25rem 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: var(--near-white);
+  border: var(--lines-light) solid 1px;
+  margin-bottom: 0;
 }
+
+/* .flexRowContent--right-col-boxes {
+  align-items: flex-start;
+} */
 
 .flexRow--add-to-cart :global(.vtex-button) {
   background: #ff7d30;

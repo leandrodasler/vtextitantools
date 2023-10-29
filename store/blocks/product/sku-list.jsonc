@@ -30,7 +30,7 @@
   "flex-layout.row#sku-list-single": {
     "children": ["flex-layout.col#sku-list-single"],
     "props": {
-      "marginTop": 6
+      "marginTop": 7
     }
   },
   "flex-layout.col#sku-list-single": {
@@ -46,8 +46,7 @@
   "flex-layout.row#sku-list": {
     "children": ["flex-layout.col#sku-list"],
     "props": {
-      "marginTop": 5,
-      "marginBottom": 5
+      "marginTop": 7
     }
   },
 
@@ -79,6 +78,7 @@
     },
     "children": [
       "rich-text#specifications",
+      "rich-text#unit-price",
       "rich-text#inventory",
       "rich-text#qty"
     ]
@@ -104,6 +104,15 @@
       "text": "**Product Info**",
       "blockClass": "skuList",
       // "width": "50%",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#unit-price": {
+    "props": {
+      // "width": "50%",
+      "text": "**Unit Price**",
+      "blockClass": "skuList",
       "textPosition": "CENTER"
     }
   },
@@ -180,6 +189,7 @@
     },
     "children": [
       "flex-layout.col#sku-highlight-size",
+      "flex-layout.col#sku-price",
       "flex-layout.col#sku-inventory",
       "flex-layout.col#sku-quantity-selector"
     ]
@@ -222,6 +232,28 @@
         // "typeSpecifications": "Drill Bit Size"
       },
       "showLabel": false
+    }
+  },
+
+  "flex-layout.col#sku-price": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-price"]
+  },
+
+  "flex-layout.col#sku-price-with-label": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-price#with-label"]
+  },
+
+  "sku-price#with-label": {
+    "props": {
+      "showLabel": true
     }
   },
 
@@ -287,7 +319,8 @@
 
   "benefits-condition#price-by-quantity-with-label": {
     "props": {
-      "Then": "flex-layout.col#price-by-quantity-with-label"
+      "Then": "flex-layout.col#price-by-quantity-with-label",
+      "Else": "flex-layout.col#sku-price-with-label"
     }
   },
 

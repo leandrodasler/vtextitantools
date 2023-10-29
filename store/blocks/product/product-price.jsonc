@@ -6,7 +6,7 @@
     }
   },
   "flex-layout.row#product-price-box": {
-    "children": ["flex-layout.col#product-price"],
+    "children": ["flex-layout.col#product-price-box"],
     "props": {
       "blockClass": "product-price-box"
     }
@@ -16,11 +16,43 @@
       "flex-layout.row#prices-and-discount",
       // "product-list-price#desktop",
       // "flex-layout.row#price",
-      "product-installments"
+      // "product-installments"
+      "has-different-prices#installments"
       // "flex-layout.row#priceSavings"
     ],
     "props": {
-      "blockClass": "product-price"
+      "horizontalAlign": "center",
+      "blockClass": ["box", "product-price"]
+    }
+  },
+  "flex-layout.col#product-price-box": {
+    "children": [
+      "flex-layout.row#prices-and-discount",
+      // "product-installments",
+      "has-different-prices#installments-box",
+      "flex-layout.row#paymentCards",
+      "benefits-condition#add-to-cart-button"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ["box", "product-price"]
+    }
+  },
+  "has-different-prices#installments": {
+    "props": {
+      "Then": "flex-layout.row#spacer",
+      "Else": "product-installments"
+    }
+  },
+  "has-different-prices#installments-box": {
+    "props": {
+      "Else": "product-installments"
+    }
+  },
+  "flex-layout.row#spacer": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 2
     }
   },
   "flex-layout.row#prices-and-discount": {
@@ -40,18 +72,13 @@
       "verticalAlign": "middle",
       "blockClass": "listAndSellingPrice"
     },
-    "children": [
-      "product-list-price#desktop",
-      "flex-layout.row#price"
-    ]
+    "children": ["product-list-price#desktop", "flex-layout.row#price"]
   },
   "flex-layout.col#discount": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "rich-text#discount"
-    ]
+    "children": ["rich-text#discount"]
   },
   "rich-text#discount": {
     "props": {
@@ -75,7 +102,7 @@
     }
   },
   "flex-layout.row#price": {
-    "children": [/* "product-selling-price#desktop",  */"current-price"],
+    "children": [/* "product-selling-price#desktop",  */ "current-price"],
     "props": {
       "blockClass": ["items-baseline"],
       "colSizing": "auto",
@@ -86,6 +113,7 @@
       "preventVerticalStretch": true
     }
   },
+
   "current-price": {
     "props": {
       "LoadingContent": "product-selling-price#desktop"

@@ -1,4 +1,4 @@
-.sellingPrice--desktop {
+.sellingPrice--desktop, .sellingPriceRangeMinWithTax, .sellingPriceRangeUniqueValue {
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -6,7 +6,8 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--product-price-box)
-  .sellingPrice--desktop {
+  .sellingPrice--desktop,
+:global(.vtex-flex-layout-0-x-flexRow--product-price-box) .sellingPriceRange {
   font-size: 2.5rem;
 }
 

@@ -29,15 +29,26 @@
       "flex-layout.row#brand-and-rating",
       "seller-page-link",
       "flex-layout.row#product-images",
+      "flex-layout.row#sku-selector",
+      "custom-product-description#large",
+      "product-specification-group#table",
       "flex-layout.row#box",
-      "flex-layout.row#divider",
-      "check-permission#sku-list",
+      "benefits-condition#sku-list-mobile",
       "flex-layout.row#assembly-options",
       "product-kit#buy-together",
-      "flex-layout.row#description-and-gallery",
-      "flex-layout.row#specification",
       "flex-layout.row#reviews-and-ratings"
     ]
+  },
+  "benefits-condition#sku-list-mobile": {
+    "props": {
+      "Then": "check-permission#sku-list",
+      "Else": "has-variations-condition#benefits-mobile"
+    }
+  },
+  "has-variations-condition#benefits-mobile": {
+    "props": {
+      "Then": "check-permission#sku-list"
+    }
   },
   "responsive-layout.mobile#product": {
     "children": [
@@ -104,9 +115,6 @@
   },
   "flex-layout.col#threekit-and-add-to-cart-button": {
     "children": ["check-permission#ThreekitPrice"]
-  },
-  "flex-layout.row#add-to-cart-button": {
-    "children": ["vtex.flex-layout:flex-layout.col", "add-to-cart-button"]
   },
   "flex-layout.col#product": {
     "children": [

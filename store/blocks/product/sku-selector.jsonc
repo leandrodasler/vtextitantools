@@ -13,6 +13,9 @@
   },
 
   "flex-layout.row#sku-selector": {
+    "props": {
+      "marginTop": 7
+    },
     "children": ["sku-selector#desktop"]
   },
 

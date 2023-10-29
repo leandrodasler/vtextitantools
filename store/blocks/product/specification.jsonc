@@ -59,7 +59,7 @@
   },
   "flex-layout.row#spec-group": {
     "props": {
-      "marginTop": 4,
+      "marginTop": 6,
       "blockClass": "productSpecificationGroup"
     },
     "children": ["flex-layout.col#spec-group"]

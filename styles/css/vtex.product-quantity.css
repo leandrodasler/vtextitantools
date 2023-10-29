@@ -53,3 +53,7 @@
 .quantitySelectorContainer :global(.vtex-dropdown__arrow) {
   color: var(--lines-darker);
 }
+
+.availableQuantityContainer {
+  text-align: center;
+}

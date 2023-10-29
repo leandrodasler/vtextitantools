@@ -21,8 +21,13 @@
 .currentPriceContainer {
   font-size: 20px;
   font-weight: 600;
-  line-height: 32px;
   color: var(--black-dark);
+}
+
+.startPrice {
+  font-size: 0.75rem;
+  font-weight: 100;
+  color: var(--black-medium);
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--product-price-box)

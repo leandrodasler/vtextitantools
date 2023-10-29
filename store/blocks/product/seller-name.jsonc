@@ -5,7 +5,7 @@
   "product-seller-name#default": {
     "props": {
       "blockClass": ["default"],
-      "message": "Vendido por {sellerName}"
+      "message": "Sold and delivered by: {sellerName}"
     }
   }
 }
