@@ -57,3 +57,8 @@
 .availableQuantityContainer {
   text-align: center;
 }
+
+:global(.vtex-numeric-stepper__minus-button),
+:global(.vtex-numeric-stepper__plus-button) {
+  border-radius: 0.25rem;
+}

@@ -48,7 +48,7 @@
   "product-quantity": {
     "props": {
       "showLabel": false,
-      "warningQuantityThreshold": 9999
+      "warningQuantityThreshold": 999999
     }
   },
   "check-permission#product-price": {

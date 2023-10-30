@@ -17,6 +17,7 @@
   background-color: var(--serious-black);
   border-color: var(--serious-black);
   color: var(--base);
+  border-radius: 0.25rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 0;

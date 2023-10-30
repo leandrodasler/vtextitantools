@@ -1,0 +1,15 @@
+.arrow {
+  opacity: 0.75;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--fresh-blue);
+  border: var(--fresh-blue) solid 1px;
+  background-color: #fff !important;
+  transition: var(--default-transition);
+}
+
+.dot:first-child:last-child {
+  display: none;
+}

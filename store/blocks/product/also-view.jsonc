@@ -2,14 +2,29 @@
   "flex-layout.row#alsoView": {
     "children": ["flex-layout.col#alsoView"],
     "props": {
+      "marginBottom": 6,
       "blockClass": ["relative", "bg-base", "z-998"]
     }
   },
   "flex-layout.col#alsoView": {
     "children": [
       "rich-text#alsoViewTitle",
-      "list-context.product-list#alsoView"
+      // "list-context.product-list#alsoView",
+      "shelf.relatedProducts"
     ]
+  },
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#list"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "showTitle": false,
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "gap": "ph2"
+      }
+    }
   },
   "rich-text#alsoViewTitle": {
     "props": {
