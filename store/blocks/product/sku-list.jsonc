@@ -101,7 +101,8 @@
 
   "rich-text#specifications": {
     "props": {
-      "text": "**Product Info**",
+      // "text": "**Product Info**",
+      "text": "**Item**",
       "blockClass": "skuList",
       // "width": "50%",
       "textPosition": "CENTER"
@@ -212,9 +213,26 @@
   "flex-layout.col#sku-highlight-size": {
     "props": {
       // "width": "50%",
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
     },
-    "children": ["sku-name"]
+    "children": ["flex-layout.row#image-and-name"]
+  },
+
+  "flex-layout.row#image-and-name": {
+    "props": {
+      "horizontalAlign": "center",
+      "experimentalHideEmptyCols": true,
+      "colGap": 3
+    },
+    "children": ["sku-has-variation-condition#sku-image", "sku-name"]
+  },
+
+  "sku-has-variation-condition#sku-image": {
+    "props": {
+      "variation": "Color",
+      "Then": "sku-image"
+    }
   },
 
   "flex-layout.col#price-by-quantity": {
@@ -306,9 +324,11 @@
     "props": {
       "preventHorizontalStretch": false,
       "horizontalAlign": "center",
-      "rowGap": 3
+      "rowGap": 3,
+      "experimentalHideEmptyCols": true
     },
     "children": [
+      "sku-has-variation-condition#sku-image",
       "flex-layout.col#sku-highlight-size-mobile",
       "benefits-condition#price-by-quantity-with-label",
       "flex-layout.col#quantity-inventory"

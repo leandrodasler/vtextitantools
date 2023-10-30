@@ -389,6 +389,10 @@
 
 /* Sku Selector */
 
+.skuSelectorContainer {
+  width: auto !important;
+}
+
 .skuSelectorContainer--desktop .skuSelectorSubcontainer {
   margin-bottom: 20px;
 }

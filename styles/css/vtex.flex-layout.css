@@ -547,9 +547,9 @@
   margin-bottom: 0;
 }
 
-/* .flexRowContent--right-col-boxes {
-  align-items: flex-start;
-} */
+.flexRowContent--prices-and-discount-box {
+  flex-wrap: wrap;
+}
 
 .flexRow--add-to-cart :global(.vtex-button) {
   background: #ff7d30;

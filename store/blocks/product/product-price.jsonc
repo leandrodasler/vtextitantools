@@ -58,7 +58,8 @@
   "flex-layout.row#prices-and-discount": {
     "props": {
       "colGap": 4,
-      "horizontalAlign": "left",
+      "blockClass": "prices-and-discount-box",
+      "horizontalAlign": "center",
       "colSizing": "auto",
       "paddingBottom": 2
     },

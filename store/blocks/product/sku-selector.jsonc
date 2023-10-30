@@ -23,8 +23,11 @@
     "props": {
       "blockClass": ["desktop", "color-round"],
       "variationsSpacing": 0,
-      "showValueNameForImageVariation": true,
-      "showValueForVariation": "all"
+      "showValueForVariation": "all",
+      "hideImpossibleCombinations": false,
+      "initialSelection": "image",
+      "thumbnailImage": "sku-selector",
+      "visibleVariations": ["Color" /* , "Size", "Drill Bit Size" */]
     }
   }
 }
