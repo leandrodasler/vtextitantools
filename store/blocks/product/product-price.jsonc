@@ -117,6 +117,7 @@
 
   "current-price": {
     "props": {
+      "showMinPrice": true,
       "LoadingContent": "product-selling-price#desktop"
     }
   },
