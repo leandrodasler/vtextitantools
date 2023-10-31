@@ -4,6 +4,7 @@
   border-radius: 2rem;
   overflow: hidden;
 }
+
 .averageRatingContainer {
   background-color: #faf7ab;
   padding: 0.3rem 0.5rem 0.2rem;
@@ -13,6 +14,12 @@
   gap: 0.5rem;
   width: fit-content;
   height: 1.8rem;
+}
+
+:global(.vtex-product-summary-2-x-element) .averageRatingContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .averageRatingContainer::before {
