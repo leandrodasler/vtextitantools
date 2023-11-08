@@ -36,7 +36,7 @@
       "benefits-condition#sku-list-mobile",
       "flex-layout.row#assembly-options",
       "product-kit#buy-together",
-      "flex-layout.row#reviews-and-ratings"
+      "has-reviews-condition"
     ]
   },
   "benefits-condition#sku-list-mobile": {
@@ -120,7 +120,7 @@
     "children": [
       "flex-layout.row#breadcrumb",
       "condition-layout.product#Threekit",
-      "flex-layout.row#reviews-and-ratings",
+      "has-reviews-condition",
       // "flex-layout.row#product-details",
       // "flex-layout.row#main",
       "product-kit#buy-together"//, // This block won't work if it's not a direct children of store.product

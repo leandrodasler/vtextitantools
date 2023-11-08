@@ -1,4 +1,9 @@
 {
+  "has-reviews-condition": {
+    "props": {
+      "Then": "flex-layout.row#reviews-and-ratings"
+    }
+  },
   "flex-layout.row#reviews-and-ratings": {
     "children": ["flex-layout.col#reviews-only"],
     "props": {

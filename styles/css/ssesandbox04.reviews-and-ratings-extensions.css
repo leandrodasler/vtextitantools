@@ -28,3 +28,20 @@
   width: 15px;
   height: 15px;
 }
+
+.formContainer {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+.formContainer :global(.vtex-card) {
+  background-color: transparent;
+  box-shadow: none!important;
+  padding: 0;
+}
+
+:global(.vtex-styleguide-9-x-jsFocusVisible) {
+  margin-top: 1rem;
+}
