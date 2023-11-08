@@ -133,3 +133,9 @@
 .reviewCommentRating {
   color: var(--black-dark);
 }
+
+.loginLink,
+.showMoreButton,
+.showLessButton {
+  color: #3c4043;
+}

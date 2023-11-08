@@ -42,6 +42,10 @@
   padding: 0;
 }
 
-:global(.vtex-styleguide-9-x-jsFocusVisible) {
+.writeReviewContainer {
   margin-top: 1rem;
+}
+
+.loginLink {
+  color: #3c4043;
 }
