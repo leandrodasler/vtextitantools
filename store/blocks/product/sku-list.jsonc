@@ -235,6 +235,12 @@
     }
   },
 
+  "sku-image": {
+    "props": {
+      "thumbnailImage": "skuselector"
+    }
+  },
+
   "flex-layout.col#price-by-quantity": {
     "props": {
       "verticalAlign": "middle"
