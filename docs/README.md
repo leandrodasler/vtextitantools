@@ -1,4 +1,4 @@
-[![Publish, Deploy and Install App](https://github.com/tiago-freire/vtextitantools/actions/workflows/publish-deploy-and-install.yml/badge.svg)](https://github.com/tiago-freire/vtextitantools/actions/workflows/publish-deploy-and-install.yml)
+[![Publish, Deploy and Install App](https://github.com/leandrodasler/vtextitantools/actions/workflows/publish-deploy-and-install.yml/badge.svg)](https://github.com/leandrodasler/vtextitantools/actions/workflows/publish-deploy-and-install.yml)
 
 # Titan Tools Store Theme
 
