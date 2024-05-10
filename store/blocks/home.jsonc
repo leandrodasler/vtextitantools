@@ -7,14 +7,10 @@
       "check-permission#representative-area",
       "flex-layout.row#sales-channel-banner",
       "check-permission#lastOrders",
-      "flex-layout.row#shopByCategory",
       "__fold__",
       "flex-layout.row#trending",
       "flex-layout.row#full-banner-desktop1",
       "flex-layout.row#popular",
-      "__fold__",
-      "flex-layout.row#bannerCoupon",
-      "flex-layout.row#imageBanners",
       "__fold__",
       "flex-layout.row#newsletter"
     ]
@@ -87,43 +83,6 @@
       "infinite": true,
       "showNavigationArrows": "always"
     }
-  },
-  "flex-layout.row#shopByCategory": {
-    "title": "Shop by Categories",
-    "props": {
-      "blockClass": "shopByCategorySection"
-    },
-    "children": ["flex-layout.col#shopByCategory"]
-  },
-  "flex-layout.col#shopByCategory": {
-    "props": {
-      "blockClass": "shopByCategory"
-    },
-    "children": ["rich-text#shopByTitle", "flex-layout.row#shop-by-categories"]
-  },
-  "rich-text#shopByTitle": {
-    "props": {
-      "text": "### Shop by Categories",
-      "textPosition": "CENTER",
-      "blockClass": "shopByCategoryTitle"
-    }
-  },
-  "flex-layout.row#shop-by-categories": {
-    "props": {
-      "blockClass": "shopByCategory",
-      "horizontalAlign": "center",
-      "colSizing": "auto",
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "link#category-1",
-      "link#category-2",
-      "link#category-3",
-      "link#category-4",
-      "link#category-5",
-      "link#category-6"
-    ]
   },
   /* Seus Últimos Pedidos */
   "flex-layout.row#last-orders": {
@@ -207,85 +166,6 @@
       "customersOrdersMonth": 0
     }
   },
-  /* New categories section */
-  "link#category-1": {
-    "children": ["image#category-1"],
-    "props": {
-      "label": "Drills",
-      "href": "/tools/drills",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-1": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3f59575c-3072-4b4c-9ad7-b9658d0d4ce3___44812bfac3f8a71912b8422ff45db087.png"
-    }
-  },
-  "link#category-2": {
-    "children": ["image#category-2"],
-    "props": {
-      "label": "Hand Tools",
-      "href": "/tools/hand-tools",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-2": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/9aef158b-a49b-40b9-b41c-a2fd98b04b54___a1775255135e4c5ccd71bc1078260c9a.png"
-    }
-  },
-  "link#category-3": {
-    "children": ["image#category-3"],
-    "props": {
-      "label": "Kits",
-      "href": "/Kits?_q=kits&map=ft",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-3": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/fc01e96d-e505-43ff-8a10-e2f981e58251___bda3fcb3d613789a9aea874f70967b9f.png"
-    }
-  },
-  "link#category-4": {
-    "children": ["image#category-4"],
-    "props": {
-      "label": "Sanders & Grinders",
-      "href": "/Sanders%20and%20Grinders?_q=sanders%20and%20grinders&map=ft",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-4": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3e00d61f-9f9e-4d2b-95fb-843926f3a8c9___dffe40e4239bc13be7511307d7c063ec.png"
-    }
-  },
-  "link#category-5": {
-    "children": ["image#category-5"],
-    "props": {
-      "label": "Saws",
-      "href": "/tools/saws",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-5": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5a364118-2398-4deb-8299-6c96d4c077df___9dff7ad18512fcf377aa0d5fff4cbb70.png"
-    }
-  },
-  "link#category-6": {
-    "children": ["image#category-6"],
-    "props": {
-      "label": "Measuring Tools",
-      "href": "/Measuring%20Tools?_q=measuring%20tools&map=ft",
-      "blockClass": "link-category"
-    }
-  },
-  "image#category-6": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3058a12e-739f-47a2-b24a-a82f0c7015c9___ffb6802bf62a6bbe8a4748828796d714.png"
-    }
-  },
   "flex-layout.row#full-banner-desktop1": {
     "children": ["image#full-banner-desktop1"],
     "props": {
@@ -306,85 +186,5 @@
       }
     },
     "title": "Full Banner 1 - Imagem"
-  },
-  "flex-layout.row#imageBanners": {
-    "title": "3 Columns Image Banners",
-    "props": {
-      "blockClass": "imageBanners",
-      "preventHorizontalStretch": true
-    },
-    "children": [
-      "flex-layout.col#banner1",
-      "flex-layout.col#banner2",
-      "flex-layout.col#banner3"
-    ]
-  },
-  "flex-layout.col#banner1": {
-    "props": {
-      "preventVerticalStretch": true
-    },
-    "children": ["image#banner-1"]
-  },
-  "flex-layout.col#banner2": {
-    "props": {
-      "preventVerticalStretch": true
-    },
-    "children": ["image#banner-2"]
-  },
-  "flex-layout.col#banner3": {
-    "props": {
-      "preventVerticalStretch": true
-    },
-    "children": ["image#banner-3"]
-  },
-  "image#banner-1": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/c48c9332-13e3-4a9a-a367-087460a86278___4b2ba3c2be87f778bbae074c80dd1b5f.png",
-      "maxHeight": 256,
-      "blockClass": "bannerThird",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#banner-2": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/7ba4886e-c880-477c-af0c-3de5967b26d4___c16505051ea9a14475097bdfd9b2ad5c.png",
-      "maxHeight": 256,
-      "blockClass": "bannerThird",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#banner-3": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/60f093a4-3a35-4152-b748-2888818d1d06___2440e0d5e9ab76533d4b4a3c4fb5a21a.png",
-      "maxHeight": 256,
-      "blockClass": "bannerThird",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "flex-layout.row#bannerCoupon": {
-    "title": "Full Banner 2",
-    "props": {
-      "blockClass": "full-banner",
-      "paddingTop": 8,
-      "fullWidth": true
-    },
-    "children": ["image#full-banner-desktop2"]
-  },
-  "image#full-banner-desktop2": {
-    "props": {
-      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/81f76a7a-a888-4b93-8554-d8b7c3e44dc8___d2ae5f08a092f3d1ecc80d6c72ed13b7.png",
-      "alt": "10% OFF",
-      "title": "10% OFF",
-      "link": {
-        "url": "#"
-      }
-    },
-    "title": "Full Banner 2 - Imagem"
   }
 }
