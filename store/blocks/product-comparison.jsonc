@@ -1,7 +1,76 @@
 {
   "store.custom#product-comparison-list": {
+    "children": ["flex-layout.row#comparison-page"]
+  },
+  "flex-layout.row#comparison-page": {
+    "children": ["flex-layout.col#comparison-page"],
+    "props": {
+      "blockClass": "comparison-page"
+    }
+  },
+  "flex-layout.col#comparison-page": {
+    "children": ["comparison-page"],
+    "props": {
+      "blockClass": "comparison-page"
+    }
+  },
+  "comparison-page": {
+    "children": ["slider-layout-group#comparison-page"]
+  },
+  "slider-layout-group#comparison-page": {
     "children": [
-      "comparison-page"
+      "product-comparison-block.product-summary-row",
+      "product-comparison-block.grouped-product-specifications",
+      "product-comparison-block.sku-specifications"
     ]
+  },
+  "product-comparison-block.product-summary-row": {
+    "blocks": ["list-context.comparison-product-summary-slider#comparison-page"]
+  },
+  "list-context.comparison-product-summary-slider#comparison-page": {
+    "blocks": ["product-summary.shelf.product-comparison#complete"],
+    "children": ["slider-layout#comparison-page-product-summary"]
+  },
+  "product-comparison-block.grouped-product-specifications": {
+    "blocks": ["list-context.comparison-row#comparison-page-row"],
+    "props": {
+      "productSpecificationGroupsToHide": "allSpecifications"
+    }
+  },
+  "product-comparison-block.sku-specifications": {
+    "blocks": ["list-context.comparison-row#comparison-page-row"],
+    "props": {
+      "skuSpecificationsToHide": "allSpecifications"
+    }
+  },
+  "list-context.comparison-row#comparison-page-row": {
+    "children": ["slider-layout#comparison-no-arrows"]
+  },
+  "slider-layout#comparison-page-product-summary": {
+    "props": {
+      "blockClass": "comparison-page",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": true
+    }
+  },
+  "slider-layout#comparison-no-arrows": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "comparison-page",
+      "showNavigationArrows": "never"
+    }
   }
 }

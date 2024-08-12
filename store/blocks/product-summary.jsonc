@@ -102,9 +102,9 @@
   },
   "stack-layout#summary": {
     "children": [
-      "product-summary-image",
+      "product-summary-image" //,
       // "product-price-savings#summary",
-      "product-price-savings#discount"
+      // "product-price-savings#discount"
     ],
     "props": {
       "zIndexOffset": 3,

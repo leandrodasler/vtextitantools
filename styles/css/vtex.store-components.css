@@ -389,11 +389,9 @@
 /* Sku Selector */
 
 .skuSelectorContainer {
-  width: auto !important;
-}
-
-.skuSelectorContainer--desktop .skuSelectorSubcontainer {
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .skuSelectorContainer--desktop .skuSelectorNameContainer {
@@ -528,7 +526,8 @@
   }
 }
 
-.productDescriptionText, .productDescriptionText :local(*) {
+.productDescriptionText,
+.productDescriptionText :local(*) {
   font-family: Fabriga !important;
   font-size: 14px !important;
   line-height: 1.25 !important;
@@ -615,7 +614,11 @@
 /* Shipping Simulator */
 
 .shippingContainer
-  :not(:global(.vtex-address-form__postalCode)):not(:global(.vtex-input)):not(:global(.vtex-input-prefix__group)):not(:global(.vtex-address-form-4-x-input)):not(:global(.vtex-button)):not(:global(.vtex-button__label)) {
+  :not(:global(.vtex-address-form__postalCode)):not(:global(.vtex-input)):not(
+    :global(.vtex-input-prefix__group)
+  ):not(:global(.vtex-address-form-4-x-input)):not(:global(.vtex-button)):not(
+    :global(.vtex-button__label)
+  ) {
   display: none;
 }
 
@@ -765,4 +768,17 @@
 .shippingNoMessage {
   color: var(--black-medium);
   text-align: center;
+}
+
+.discountContainer {
+  width: 100%;
+  display: flex;
+  place-content: center;
+}
+
+.discountInsideContainer {
+  top: 1.5rem;
+  right: auto;
+  left: 0;
+  border-radius: 1rem;
 }

@@ -1,7 +1,7 @@
 {
   "flex-layout.col#left-col": {
     "children": [
-      "product-images#desktop",
+      "product-images#desktop"/*,
       "flex-layout.row#sku-selector"/* ,
       "flex-layout.row#description-and-gallery",
       "flex-layout.row#features",

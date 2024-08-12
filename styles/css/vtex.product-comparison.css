@@ -43,3 +43,7 @@
   width: 16px;
   height: 16px;
 }
+
+/* .title:local(:has(span:empty)) {
+  display: none;
+} */

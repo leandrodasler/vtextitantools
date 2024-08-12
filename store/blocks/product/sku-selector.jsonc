@@ -25,9 +25,10 @@
       "variationsSpacing": 0,
       "showValueForVariation": "all",
       "hideImpossibleCombinations": false,
+      
       "initialSelection": "image",
-      "thumbnailImage": "skuselector",
-      "visibleVariations": ["Color" /* , "Size", "Drill Bit Size" */]
+      "thumbnailImage": "skuselector"//,
+      // "visibleVariations": ["Color" /* , "Size", "Drill Bit Size" */]
     }
   }
 }

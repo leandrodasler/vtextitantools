@@ -43,7 +43,8 @@
       "flex-layout.row#brand-and-rating",
       "seller-page-link",
       "has-specifications-condition#description-size",
-      "product-specification-group#table"
+      "product-specification-group#table",
+      "flex-layout.row#sku-selector"
     ]
   },
   "has-specifications-condition#description-size": {
