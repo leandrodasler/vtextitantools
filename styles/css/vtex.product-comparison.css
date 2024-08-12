@@ -44,6 +44,14 @@
   height: 16px;
 }
 
-/* .title:local(:has(span:empty)) {
-  display: none;
-} */
+:local(html[lang^="pt"]) .title :local(span:empty:before) {
+  content: 'Mais especificações'
+}
+
+:local(html[lang^="es"]) .title :local(span:empty:before) {
+  content: 'Más especificaciones'
+}
+
+:local(html[lang^="en"]) .title :local(span:empty:before) {
+  content: 'More specifications'
+}
