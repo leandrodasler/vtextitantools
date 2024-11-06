@@ -86,5 +86,11 @@
     "ssesandbox04.demo-warning": "0.x",
     "ssesandbox04.reviews-and-ratings-extensions": "2.x"
   },
+  "billingOptions": {
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
