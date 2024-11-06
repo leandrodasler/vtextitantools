@@ -9,15 +9,22 @@
 # Installing the Titan Tools Store Theme
 
 - Log in to the desired VTEX account
-- Clone this repository, enter its directory in terminal and run:
+- Clone this repository, enter its directory in the terminal and run the [installation script for all necessary apps](../install-list.sh):
 
   ```bash
+  ./install-list.sh
+  # or
   bash ./install-list.sh
+  # or
+  sh ./install-list.sh
+  # or, if your operating system does not run shell
+  # scripts, run the "vtex install ..." command
+  # contained in the install-list.sh file 
   ```
 
-  - Some applications must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
+  - Some apps must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
 
-- After install required apps by `install-list.sh` shell script, you are ready to use **Titan Tools Store Theme**, avaiable at https://{{account}}.myvtex.com.
+- After install required apps by [install-list.sh](../install-list.sh) shell script, you are ready to use **Titan Tools Store Theme**, avaiable at https://{{account}}.myvtex.com.
 
 ## Customization
 
