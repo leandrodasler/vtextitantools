@@ -8,32 +8,16 @@
 
 # Installing the Titan Tools Store Theme
 
-## Prerequisites
+- Log in to the desired VTEX account
+- Clone this repository, enter its directory in terminal and run:
 
-### Set up your development environment
+  ```bash
+  bash ./install-list.sh
+  ```
 
-Before starting with the **Titan Tools Store Theme** setup itself, you must:
+  - Some applications must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
 
-1. [Set up a workspace to develop in VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-basicsetuptodevelopinvtexio) on your machine.
-2. Follow [these instructions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-prerequesites) to make sure you meet all the prerequisites to develop using Store Framework.
-3. Make sure your store’s catalog is integrated with VTEX Intelligent Search, as described in [this article](https://help.vtex.com/en/tracks/vtex-intelligent-search--19wrbB7nEQcmwzDPl1l4Cb/6wKQgKmu2FT6084BJT7z5V).
-
-
-### Install required B2B apps
-Clone this repository, enter its directory in terminal and run:
-```bash
-bash ./install-list.sh 
-```
-
-Some applications must be installed via [App Store](https://apps.vtex.com). In these cases, a browser window will open for installation.
-
-## How to use
-
-After following the steps above, you are ready to use **Titan Tools Store Theme**. You must:
-
-1. Replace `vendor` on `manifest.json` for your account name
-2. Run the `vtex link` command on the CLI.
-3. Run the `vtex browse` command to see the store using Titan Tools Store Theme on your browser.
+- After install required apps by `install-list.sh` shell script, you are ready to use **Titan Tools Store Theme**, avaiable at https://{{account}}.myvtex.com.
 
 ## Customization
 
