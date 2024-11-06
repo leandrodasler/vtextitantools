@@ -29,4 +29,5 @@ vtex install vtex.reviews-and-ratings@3.x \
     vtex.telemarketing@2.x \
     ssesandbox04.threekit-app@0.x \
     ssesandbox04.seller-page@0.x \
-    ssesandbox04.b2b-suite-bra@1.x
+    ssesandbox04.b2b-suite-bra@1.x \
+    vtextitantools.b2bstore@7.x
