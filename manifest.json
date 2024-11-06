@@ -1,7 +1,7 @@
 {
   "vendor": "vtextitantools",
   "name": "b2bstore",
-  "version": "6.0.1",
+  "version": "6.0.3",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
