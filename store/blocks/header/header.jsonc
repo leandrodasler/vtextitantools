@@ -110,6 +110,7 @@
       "rich-text#headStripe3",
       "rich-text#headStripe4",
       "rich-text#headStripe5",
+      "rich-text#headStripe6",
       "flex-layout.col#spacer"
     ]
   },
@@ -202,6 +203,13 @@
     }
   },
 
+  "rich-text#headStripe6": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Saved carts](/checkout-b2b/saved-carts)"
+    }
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -265,7 +273,8 @@
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
-      "rich-text#headStripe5"
+      "rich-text#headStripe5",
+      "rich-text#headStripe6"
     ]
   },
 
@@ -293,7 +302,8 @@
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
-      "rich-text#headStripe5"
+      "rich-text#headStripe5",
+      "rich-text#headStripe6"
     ]
   },
 
