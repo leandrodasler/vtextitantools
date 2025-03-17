@@ -36,7 +36,7 @@
       "flex-layout.row#prices-and-discount",
       // "product-installments",
       "has-different-prices#installments-box",
-      "sku-taxes"
+      "sku-taxes",
       "flex-layout.row#paymentCards",
       "benefits-condition#add-to-cart-button"
     ],
