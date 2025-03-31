@@ -111,6 +111,7 @@
       "rich-text#headStripe4",
       "rich-text#headStripe5",
       "rich-text#headStripe6",
+      "rich-text#headStripe7",
       "flex-layout.col#spacer"
     ]
   },
@@ -210,6 +211,13 @@
     }
   },
 
+  "rich-text#headStripe7": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Checkout B2B](/checkout-b2b)"
+    }
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -274,7 +282,8 @@
       "rich-text#headStripe3",
       "rich-text#headStripe4",
       "rich-text#headStripe5",
-      "rich-text#headStripe6"
+      "rich-text#headStripe6",
+      "rich-text#headStripe7"
     ]
   },
 
@@ -303,7 +312,8 @@
       "rich-text#headStripe3",
       "rich-text#headStripe4",
       "rich-text#headStripe5",
-      "rich-text#headStripe6"
+      "rich-text#headStripe6",
+      "rich-text#headStripe7"
     ]
   },
 
